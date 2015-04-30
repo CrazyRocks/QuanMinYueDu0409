@@ -1,0 +1,1 @@
+../../../../libs/OWReader/OWReader/reader/BookDigest/BookDigestTableController.h

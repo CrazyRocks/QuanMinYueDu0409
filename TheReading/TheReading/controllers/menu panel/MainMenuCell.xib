@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="52" id="M7L-7m-YHc" customClass="MainMenuCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="52"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" contentMode="center" tableViewCell="M7L-7m-YHc" id="RhY-z3-JdY">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="51"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qnq-j7-AJq">
+                        <rect key="frame" x="95" y="13" width="225" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="d6i-0Z-IqI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uzs-Fx-Qba">
+                        <rect key="frame" x="53" y="13" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="MFU-Ta-mXV"/>
+                            <constraint firstAttribute="width" constant="25" id="PNZ-Cp-KE1"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Qnq-j7-AJq" firstAttribute="leading" secondItem="RhY-z3-JdY" secondAttribute="leading" constant="95" id="2EQ-Sy-lg4"/>
+                    <constraint firstItem="uzs-Fx-Qba" firstAttribute="leading" secondItem="RhY-z3-JdY" secondAttribute="leading" constant="53" id="2yU-CV-sC7"/>
+                    <constraint firstItem="uzs-Fx-Qba" firstAttribute="top" secondItem="RhY-z3-JdY" secondAttribute="topMargin" constant="5" id="8Ot-Cn-Q8j"/>
+                    <constraint firstAttribute="trailing" secondItem="Qnq-j7-AJq" secondAttribute="trailing" id="O7O-M5-wbL"/>
+                    <constraint firstItem="Qnq-j7-AJq" firstAttribute="top" secondItem="RhY-z3-JdY" secondAttribute="top" constant="13" id="RL4-YO-pJG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconLeftConstraint" destination="2yU-CV-sC7" id="nYI-nM-Z60"/>
+                <outlet property="iconTopConstraint" destination="8Ot-Cn-Q8j" id="MHz-b6-XaF"/>
+                <outlet property="iconView" destination="uzs-Fx-Qba" id="2rB-1f-fFe"/>
+                <outlet property="titleLB" destination="Qnq-j7-AJq" id="WbA-qk-xLA"/>
+                <outlet property="titleLeftConstraint" destination="2EQ-Sy-lg4" id="LDu-1a-icd"/>
+                <outlet property="titleTopConstraint" destination="RL4-YO-pJG" id="HZA-2s-lcY"/>
+            </connections>
+            <point key="canvasLocation" x="278" y="285"/>
+        </tableViewCell>
+    </objects>
+</document>

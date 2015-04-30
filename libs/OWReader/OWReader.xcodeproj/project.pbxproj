@@ -1,0 +1,1035 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E8037DF3A931B51A7887FE5 /* libPods-OWReader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F77ED5910A49180ED37C6F0 /* libPods-OWReader.a */; };
+		B807E95C1A641094007EDCB6 /* BSConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E8941A641094007EDCB6 /* BSConfig.m */; };
+		B807E95D1A641094007EDCB6 /* BSGlobalAttri.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E8961A641094007EDCB6 /* BSGlobalAttri.m */; };
+		B807E95E1A641094007EDCB6 /* BookDigest.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E8991A641094007EDCB6 /* BookDigest.m */; };
+		B807E95F1A641094007EDCB6 /* Bookmark.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E89B1A641094007EDCB6 /* Bookmark.m */; };
+		B807E9601A641094007EDCB6 /* BSCoreDataDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E89D1A641094007EDCB6 /* BSCoreDataDelegate.m */; };
+		B807E9611A641094007EDCB6 /* Catalogue.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E89F1A641094007EDCB6 /* Catalogue.m */; };
+		B807E9621A641094007EDCB6 /* LogicBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B807E8A01A641094007EDCB6 /* LogicBook.xcdatamodeld */; };
+		B807E9631A641094007EDCB6 /* MyBook.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E8A51A641094007EDCB6 /* MyBook.m */; };
+		B807E9641A641094007EDCB6 /* LYBookConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E8A91A641094007EDCB6 /* LYBookConfig.m */; };
+		B807E9651A641094007EDCB6 /* DownloadingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E8AC1A641094007EDCB6 /* DownloadingItem.m */; };
+		B807E9661A641094007EDCB6 /* InAppPurchaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E8AE1A641094007EDCB6 /* InAppPurchaseManager.m */; };
+		B807E9671A641094007EDCB6 /* JRBookDigestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E8B01A641094007EDCB6 /* JRBookDigestManager.m */; };
+		B807E9681A641094007EDCB6 /* LYBookDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E8B21A641094007EDCB6 /* LYBookDownloadManager.m */; };
+		B807E9691A641094007EDCB6 /* LYBookHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E8B41A641094007EDCB6 /* LYBookHelper.m */; };
+		B807E96A1A641094007EDCB6 /* LYBookItemData.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E8B61A641094007EDCB6 /* LYBookItemData.m */; };
+		B807E96B1A641094007EDCB6 /* LYBookmarkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E8B81A641094007EDCB6 /* LYBookmarkManager.m */; };
+		B807E96C1A641094007EDCB6 /* LYBookRenderManager+Async.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E8BA1A641094007EDCB6 /* LYBookRenderManager+Async.m */; };
+		B807E96D1A641094007EDCB6 /* LYBookRenderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E8BC1A641094007EDCB6 /* LYBookRenderManager.m */; };
+		B807E96E1A641094007EDCB6 /* LYBookSceneManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E8BE1A641094007EDCB6 /* LYBookSceneManager.m */; };
+		B807E96F1A641094007EDCB6 /* MyBooksManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E8C01A641094007EDCB6 /* MyBooksManager.m */; };
+		B807E9701A641094007EDCB6 /* OWBookButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E8C21A641094007EDCB6 /* OWBookButton.m */; };
+		B807E9711A641094007EDCB6 /* AudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E8C71A641094007EDCB6 /* AudioViewController.m */; };
+		B807E9721A641094007EDCB6 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E8CA1A641094007EDCB6 /* Common.m */; };
+		B807E9731A641094007EDCB6 /* MusicControlBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E8CC1A641094007EDCB6 /* MusicControlBtn.m */; };
+		B807E9741A641094007EDCB6 /* PCSEQVisualizer.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E8CE1A641094007EDCB6 /* PCSEQVisualizer.m */; };
+		B807E9751A641094007EDCB6 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E8D01A641094007EDCB6 /* UIImage+Color.m */; };
+		B807E9761A641094007EDCB6 /* BookmarkController.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E8D31A641094007EDCB6 /* BookmarkController.m */; };
+		B807E9771A641094007EDCB6 /* BookmarkTableCellCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E8D61A641094007EDCB6 /* BookmarkTableCellCell.m */; };
+		B807E9781A641094007EDCB6 /* BookmarkTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E8D91A641094007EDCB6 /* BookmarkTableController.m */; };
+		B807E9791A641094007EDCB6 /* BookDigestTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E8DD1A641094007EDCB6 /* BookDigestTableController.m */; };
+		B807E97A1A641094007EDCB6 /* BookDigestTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E8E01A641094007EDCB6 /* BookDigestTableViewCell.m */; };
+		B807E97B1A641094007EDCB6 /* catalogeViewBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E8E41A641094007EDCB6 /* catalogeViewBtn.m */; };
+		B807E97C1A641094007EDCB6 /* CatalogueTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E8E61A641094007EDCB6 /* CatalogueTableCell.m */; };
+		B807E97D1A641094007EDCB6 /* CatalogueTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E8E91A641094007EDCB6 /* CatalogueTableController.m */; };
+		B807E97E1A641094007EDCB6 /* CatalogueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E8EC1A641094007EDCB6 /* CatalogueViewController.m */; };
+		B807E97F1A641094007EDCB6 /* GLAlphaInController.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E8F01A641094007EDCB6 /* GLAlphaInController.m */; };
+		B807E9801A641094007EDCB6 /* GLAsyncMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E8F21A641094007EDCB6 /* GLAsyncMessageController.m */; };
+		B807E9811A641094007EDCB6 /* GLGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E8F51A641094007EDCB6 /* GLGradientView.m */; };
+		B807E9821A641094007EDCB6 /* GLLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E8F71A641094007EDCB6 /* GLLoading.m */; };
+		B807E9831A641094007EDCB6 /* GLNoiceBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E8F91A641094007EDCB6 /* GLNoiceBackgroundView.m */; };
+		B807E9841A641094007EDCB6 /* GLRoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E8FB1A641094007EDCB6 /* GLRoundButton.m */; };
+		B807E9851A641094007EDCB6 /* Shadow.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E8FD1A641094007EDCB6 /* Shadow.m */; };
+		B807E9861A641094007EDCB6 /* DigestManagementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E9001A641094007EDCB6 /* DigestManagementViewController.m */; };
+		B807E9871A641094007EDCB6 /* NotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E9041A641094007EDCB6 /* NotesViewController.m */; };
+		B807E9881A641094007EDCB6 /* LineView.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E9081A641094007EDCB6 /* LineView.m */; };
+		B807E9891A641094007EDCB6 /* LYBookNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E90A1A641094007EDCB6 /* LYBookNavigationBar.m */; };
+		B807E98A1A641094007EDCB6 /* LYBookNavigationBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E90C1A641094007EDCB6 /* LYBookNavigationBarController.m */; };
+		B807E98B1A641094007EDCB6 /* LYBookPageRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E90F1A641094007EDCB6 /* LYBookPageRootController.m */; };
+		B807E98C1A641094007EDCB6 /* LYBookPageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E9111A641094007EDCB6 /* LYBookPageScrollView.m */; };
+		B807E98D1A641094007EDCB6 /* MagnifierView.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E9131A641094007EDCB6 /* MagnifierView.m */; };
+		B807E98E1A641094007EDCB6 /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E9151A641094007EDCB6 /* PageViewController.m */; };
+		B807E98F1A641094007EDCB6 /* BookDigestNetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E9191A641094007EDCB6 /* BookDigestNetModel.m */; };
+		B807E9901A641094007EDCB6 /* BookMarkNetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E91B1A641094007EDCB6 /* BookMarkNetModel.m */; };
+		B807E9911A641094007EDCB6 /* ModelTransformationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E91D1A641094007EDCB6 /* ModelTransformationTool.m */; };
+		B807E9921A641094007EDCB6 /* NetworkSynchronizationForBook.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E91F1A641094007EDCB6 /* NetworkSynchronizationForBook.m */; };
+		B807E9931A641094007EDCB6 /* PulsingHaloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E9211A641094007EDCB6 /* PulsingHaloLayer.m */; };
+		B807E9941A641094007EDCB6 /* ReadProessNetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E9231A641094007EDCB6 /* ReadProessNetModel.m */; };
+		B807E9951A641094007EDCB6 /* UserInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E9251A641094007EDCB6 /* UserInformation.m */; };
+		B807E9961A641094007EDCB6 /* TouchReader.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E9271A641094007EDCB6 /* TouchReader.m */; };
+		B807E9971A641094007EDCB6 /* LYBookCatalogueParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E92A1A641094007EDCB6 /* LYBookCatalogueParser.m */; };
+		B807E9981A641094007EDCB6 /* BSReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E92D1A641094007EDCB6 /* BSReaderViewController.m */; };
+		B807E9991A641094007EDCB6 /* GLPhotoController.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E92F1A641094007EDCB6 /* GLPhotoController.m */; };
+		B807E99A1A641094007EDCB6 /* LYFontSizeControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E9311A641094007EDCB6 /* LYFontSizeControllerViewController.m */; };
+		B807E99B1A641094007EDCB6 /* MaskBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E9341A641094007EDCB6 /* MaskBackgroundView.m */; };
+		B807E99C1A641094007EDCB6 /* SearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E9371A641094007EDCB6 /* SearchCell.m */; };
+		B807E99D1A641094007EDCB6 /* SearchHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E93A1A641094007EDCB6 /* SearchHeader.m */; };
+		B807E99E1A641094007EDCB6 /* SearchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E93D1A641094007EDCB6 /* SearchModel.m */; };
+		B807E99F1A641094007EDCB6 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E93F1A641094007EDCB6 /* SearchViewController.m */; };
+		B807E9A01A641094007EDCB6 /* GLBubble.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E9431A641094007EDCB6 /* GLBubble.m */; };
+		B807E9A11A641094007EDCB6 /* GLSliderBubbleController.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E9451A641094007EDCB6 /* GLSliderBubbleController.m */; };
+		B807E9A21A641094007EDCB6 /* LYBookSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E9481A641094007EDCB6 /* LYBookSlider.m */; };
+		B807E9A31A641094007EDCB6 /* LYBookSliderController.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E94A1A641094007EDCB6 /* LYBookSliderController.m */; };
+		B807E9A41A641094007EDCB6 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E94E1A641094007EDCB6 /* VideoViewController.m */; };
+		B807E9A51A641094007EDCB6 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = B807E9521A641094007EDCB6 /* ioapi.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B807E9A61A641094007EDCB6 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = B807E9541A641094007EDCB6 /* mztools.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B807E9A71A641094007EDCB6 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = B807E9561A641094007EDCB6 /* unzip.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B807E9A81A641094007EDCB6 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = B807E9581A641094007EDCB6 /* zip.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B807E9A91A641094007EDCB6 /* ZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = B807E95B1A641094007EDCB6 /* ZipArchive.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B85578B0198A35B2008E7017 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B85578AF198A35B2008E7017 /* Foundation.framework */; };
+		B8C879B01A727FE300085681 /* NotesLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C879AF1A727FE300085681 /* NotesLabel.m */; };
+		B8F127F21A74791D00CDA4E6 /* OWSceneModeSelectionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B8F127F11A74791D00CDA4E6 /* OWSceneModeSelectionButton.m */; };
+		E31BF8731A0350F1001B2171 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E31BF8721A0350F1001B2171 /* QuartzCore.framework */; };
+		E34DF3851A15C9470095BE0D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E34DF3841A15C9470095BE0D /* AudioToolbox.framework */; };
+		E34DF3871A15C94E0095BE0D /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E34DF3861A15C94E0095BE0D /* CoreAudio.framework */; };
+		E34DF3891A15CA290095BE0D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E34DF3881A15CA290095BE0D /* AVFoundation.framework */; };
+		E3F42DE419D7D31A00981EA2 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3F42DE319D7D31A00981EA2 /* CoreText.framework */; };
+		E3F42DE619D7D33600981EA2 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E3F42DE519D7D33600981EA2 /* libxml2.2.dylib */; };
+		E3F42F8719D9008400981EA2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3F42F8619D9008400981EA2 /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B85578AA198A35B2008E7017 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8F77ED5910A49180ED37C6F0 /* libPods-OWReader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OWReader.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC2EB1507B8BDEFEDD002658 /* Pods-OWReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OWReader.release.xcconfig"; path = "../Pods/Target Support Files/Pods-OWReader/Pods-OWReader.release.xcconfig"; sourceTree = "<group>"; };
+		B807E8931A641094007EDCB6 /* BSConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSConfig.h; sourceTree = "<group>"; };
+		B807E8941A641094007EDCB6 /* BSConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSConfig.m; sourceTree = "<group>"; };
+		B807E8951A641094007EDCB6 /* BSGlobalAttri.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSGlobalAttri.h; sourceTree = "<group>"; };
+		B807E8961A641094007EDCB6 /* BSGlobalAttri.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSGlobalAttri.m; sourceTree = "<group>"; };
+		B807E8981A641094007EDCB6 /* BookDigest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookDigest.h; sourceTree = "<group>"; };
+		B807E8991A641094007EDCB6 /* BookDigest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookDigest.m; sourceTree = "<group>"; };
+		B807E89A1A641094007EDCB6 /* Bookmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bookmark.h; sourceTree = "<group>"; };
+		B807E89B1A641094007EDCB6 /* Bookmark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bookmark.m; sourceTree = "<group>"; };
+		B807E89C1A641094007EDCB6 /* BSCoreDataDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSCoreDataDelegate.h; sourceTree = "<group>"; };
+		B807E89D1A641094007EDCB6 /* BSCoreDataDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSCoreDataDelegate.m; sourceTree = "<group>"; };
+		B807E89E1A641094007EDCB6 /* Catalogue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Catalogue.h; sourceTree = "<group>"; };
+		B807E89F1A641094007EDCB6 /* Catalogue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Catalogue.m; sourceTree = "<group>"; };
+		B807E8A11A641094007EDCB6 /* LogicBook3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LogicBook3.xcdatamodel; sourceTree = "<group>"; };
+		B807E8A21A641094007EDCB6 /* LogicBook4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LogicBook4.xcdatamodel; sourceTree = "<group>"; };
+		B807E8A31A641094007EDCB6 /* LogicBook5.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LogicBook5.xcdatamodel; sourceTree = "<group>"; };
+		B807E8A41A641094007EDCB6 /* MyBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBook.h; sourceTree = "<group>"; };
+		B807E8A51A641094007EDCB6 /* MyBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBook.m; sourceTree = "<group>"; };
+		B807E8A61A641094007EDCB6 /* JRReader.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = JRReader.xcassets; sourceTree = "<group>"; };
+		B807E8A71A641094007EDCB6 /* JRReaderNotificationName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRReaderNotificationName.h; sourceTree = "<group>"; };
+		B807E8A81A641094007EDCB6 /* LYBookConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYBookConfig.h; sourceTree = "<group>"; };
+		B807E8A91A641094007EDCB6 /* LYBookConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYBookConfig.m; sourceTree = "<group>"; };
+		B807E8AB1A641094007EDCB6 /* DownloadingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadingItem.h; sourceTree = "<group>"; };
+		B807E8AC1A641094007EDCB6 /* DownloadingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadingItem.m; sourceTree = "<group>"; };
+		B807E8AD1A641094007EDCB6 /* InAppPurchaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppPurchaseManager.h; sourceTree = "<group>"; };
+		B807E8AE1A641094007EDCB6 /* InAppPurchaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppPurchaseManager.m; sourceTree = "<group>"; };
+		B807E8AF1A641094007EDCB6 /* JRBookDigestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRBookDigestManager.h; sourceTree = "<group>"; };
+		B807E8B01A641094007EDCB6 /* JRBookDigestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRBookDigestManager.m; sourceTree = "<group>"; };
+		B807E8B11A641094007EDCB6 /* LYBookDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYBookDownloadManager.h; sourceTree = "<group>"; };
+		B807E8B21A641094007EDCB6 /* LYBookDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYBookDownloadManager.m; sourceTree = "<group>"; };
+		B807E8B31A641094007EDCB6 /* LYBookHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYBookHelper.h; sourceTree = "<group>"; };
+		B807E8B41A641094007EDCB6 /* LYBookHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYBookHelper.m; sourceTree = "<group>"; };
+		B807E8B51A641094007EDCB6 /* LYBookItemData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYBookItemData.h; sourceTree = "<group>"; };
+		B807E8B61A641094007EDCB6 /* LYBookItemData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYBookItemData.m; sourceTree = "<group>"; };
+		B807E8B71A641094007EDCB6 /* LYBookmarkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYBookmarkManager.h; sourceTree = "<group>"; };
+		B807E8B81A641094007EDCB6 /* LYBookmarkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYBookmarkManager.m; sourceTree = "<group>"; };
+		B807E8B91A641094007EDCB6 /* LYBookRenderManager+Async.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LYBookRenderManager+Async.h"; sourceTree = "<group>"; };
+		B807E8BA1A641094007EDCB6 /* LYBookRenderManager+Async.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LYBookRenderManager+Async.m"; sourceTree = "<group>"; };
+		B807E8BB1A641094007EDCB6 /* LYBookRenderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYBookRenderManager.h; sourceTree = "<group>"; };
+		B807E8BC1A641094007EDCB6 /* LYBookRenderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYBookRenderManager.m; sourceTree = "<group>"; };
+		B807E8BD1A641094007EDCB6 /* LYBookSceneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYBookSceneManager.h; sourceTree = "<group>"; };
+		B807E8BE1A641094007EDCB6 /* LYBookSceneManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYBookSceneManager.m; sourceTree = "<group>"; };
+		B807E8BF1A641094007EDCB6 /* MyBooksManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBooksManager.h; sourceTree = "<group>"; };
+		B807E8C01A641094007EDCB6 /* MyBooksManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBooksManager.m; sourceTree = "<group>"; };
+		B807E8C11A641094007EDCB6 /* OWBookButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OWBookButton.h; sourceTree = "<group>"; };
+		B807E8C21A641094007EDCB6 /* OWBookButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OWBookButton.m; sourceTree = "<group>"; };
+		B807E8C31A641094007EDCB6 /* OWReader-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OWReader-Prefix.pch"; sourceTree = "<group>"; };
+		B807E8C61A641094007EDCB6 /* AudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioViewController.h; sourceTree = "<group>"; };
+		B807E8C71A641094007EDCB6 /* AudioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioViewController.m; sourceTree = "<group>"; };
+		B807E8C81A641094007EDCB6 /* AudioViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AudioViewController.xib; sourceTree = "<group>"; };
+		B807E8C91A641094007EDCB6 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		B807E8CA1A641094007EDCB6 /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
+		B807E8CB1A641094007EDCB6 /* MusicControlBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicControlBtn.h; sourceTree = "<group>"; };
+		B807E8CC1A641094007EDCB6 /* MusicControlBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicControlBtn.m; sourceTree = "<group>"; };
+		B807E8CD1A641094007EDCB6 /* PCSEQVisualizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCSEQVisualizer.h; sourceTree = "<group>"; };
+		B807E8CE1A641094007EDCB6 /* PCSEQVisualizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCSEQVisualizer.m; sourceTree = "<group>"; };
+		B807E8CF1A641094007EDCB6 /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
+		B807E8D01A641094007EDCB6 /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
+		B807E8D21A641094007EDCB6 /* BookmarkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkController.h; sourceTree = "<group>"; };
+		B807E8D31A641094007EDCB6 /* BookmarkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookmarkController.m; sourceTree = "<group>"; };
+		B807E8D41A641094007EDCB6 /* BookmarkController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookmarkController.xib; sourceTree = "<group>"; };
+		B807E8D51A641094007EDCB6 /* BookmarkTableCellCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkTableCellCell.h; sourceTree = "<group>"; };
+		B807E8D61A641094007EDCB6 /* BookmarkTableCellCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookmarkTableCellCell.m; sourceTree = "<group>"; };
+		B807E8D71A641094007EDCB6 /* BookmarkTableCellCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookmarkTableCellCell.xib; sourceTree = "<group>"; };
+		B807E8D81A641094007EDCB6 /* BookmarkTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkTableController.h; sourceTree = "<group>"; };
+		B807E8D91A641094007EDCB6 /* BookmarkTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookmarkTableController.m; sourceTree = "<group>"; };
+		B807E8DA1A641094007EDCB6 /* BookmarkTableController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookmarkTableController.xib; sourceTree = "<group>"; };
+		B807E8DC1A641094007EDCB6 /* BookDigestTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookDigestTableController.h; sourceTree = "<group>"; };
+		B807E8DD1A641094007EDCB6 /* BookDigestTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookDigestTableController.m; sourceTree = "<group>"; };
+		B807E8DE1A641094007EDCB6 /* BookDigestTableController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookDigestTableController.xib; sourceTree = "<group>"; };
+		B807E8DF1A641094007EDCB6 /* BookDigestTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookDigestTableViewCell.h; sourceTree = "<group>"; };
+		B807E8E01A641094007EDCB6 /* BookDigestTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookDigestTableViewCell.m; sourceTree = "<group>"; };
+		B807E8E11A641094007EDCB6 /* BookDigestTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookDigestTableViewCell.xib; sourceTree = "<group>"; };
+		B807E8E31A641094007EDCB6 /* catalogeViewBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = catalogeViewBtn.h; sourceTree = "<group>"; };
+		B807E8E41A641094007EDCB6 /* catalogeViewBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = catalogeViewBtn.m; sourceTree = "<group>"; };
+		B807E8E51A641094007EDCB6 /* CatalogueTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatalogueTableCell.h; sourceTree = "<group>"; };
+		B807E8E61A641094007EDCB6 /* CatalogueTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatalogueTableCell.m; sourceTree = "<group>"; };
+		B807E8E71A641094007EDCB6 /* CatalogueTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CatalogueTableCell.xib; sourceTree = "<group>"; };
+		B807E8E81A641094007EDCB6 /* CatalogueTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatalogueTableController.h; sourceTree = "<group>"; };
+		B807E8E91A641094007EDCB6 /* CatalogueTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatalogueTableController.m; sourceTree = "<group>"; };
+		B807E8EA1A641094007EDCB6 /* CatalogueTableController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CatalogueTableController.xib; sourceTree = "<group>"; };
+		B807E8EB1A641094007EDCB6 /* CatalogueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatalogueViewController.h; sourceTree = "<group>"; };
+		B807E8EC1A641094007EDCB6 /* CatalogueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatalogueViewController.m; sourceTree = "<group>"; };
+		B807E8ED1A641094007EDCB6 /* CatalogueViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CatalogueViewController.xib; sourceTree = "<group>"; };
+		B807E8EF1A641094007EDCB6 /* GLAlphaInController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLAlphaInController.h; sourceTree = "<group>"; };
+		B807E8F01A641094007EDCB6 /* GLAlphaInController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLAlphaInController.m; sourceTree = "<group>"; };
+		B807E8F11A641094007EDCB6 /* GLAsyncMessageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLAsyncMessageController.h; sourceTree = "<group>"; };
+		B807E8F21A641094007EDCB6 /* GLAsyncMessageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLAsyncMessageController.m; sourceTree = "<group>"; };
+		B807E8F31A641094007EDCB6 /* GLAsyncMessageController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GLAsyncMessageController.xib; sourceTree = "<group>"; };
+		B807E8F41A641094007EDCB6 /* GLGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLGradientView.h; sourceTree = "<group>"; };
+		B807E8F51A641094007EDCB6 /* GLGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLGradientView.m; sourceTree = "<group>"; };
+		B807E8F61A641094007EDCB6 /* GLLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLLoading.h; sourceTree = "<group>"; };
+		B807E8F71A641094007EDCB6 /* GLLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLLoading.m; sourceTree = "<group>"; };
+		B807E8F81A641094007EDCB6 /* GLNoiceBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLNoiceBackgroundView.h; sourceTree = "<group>"; };
+		B807E8F91A641094007EDCB6 /* GLNoiceBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLNoiceBackgroundView.m; sourceTree = "<group>"; };
+		B807E8FA1A641094007EDCB6 /* GLRoundButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLRoundButton.h; sourceTree = "<group>"; };
+		B807E8FB1A641094007EDCB6 /* GLRoundButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLRoundButton.m; sourceTree = "<group>"; };
+		B807E8FC1A641094007EDCB6 /* Shadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shadow.h; sourceTree = "<group>"; };
+		B807E8FD1A641094007EDCB6 /* Shadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shadow.m; sourceTree = "<group>"; };
+		B807E8FF1A641094007EDCB6 /* DigestManagementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DigestManagementViewController.h; sourceTree = "<group>"; };
+		B807E9001A641094007EDCB6 /* DigestManagementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DigestManagementViewController.m; sourceTree = "<group>"; };
+		B807E9011A641094007EDCB6 /* DigestManagementViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DigestManagementViewController.xib; sourceTree = "<group>"; };
+		B807E9031A641094007EDCB6 /* NotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotesViewController.h; sourceTree = "<group>"; };
+		B807E9041A641094007EDCB6 /* NotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotesViewController.m; sourceTree = "<group>"; };
+		B807E9051A641094007EDCB6 /* NotesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotesViewController.xib; sourceTree = "<group>"; };
+		B807E9071A641094007EDCB6 /* LineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineView.h; sourceTree = "<group>"; };
+		B807E9081A641094007EDCB6 /* LineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineView.m; sourceTree = "<group>"; };
+		B807E9091A641094007EDCB6 /* LYBookNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYBookNavigationBar.h; sourceTree = "<group>"; };
+		B807E90A1A641094007EDCB6 /* LYBookNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYBookNavigationBar.m; sourceTree = "<group>"; };
+		B807E90B1A641094007EDCB6 /* LYBookNavigationBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYBookNavigationBarController.h; sourceTree = "<group>"; };
+		B807E90C1A641094007EDCB6 /* LYBookNavigationBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYBookNavigationBarController.m; sourceTree = "<group>"; };
+		B807E90D1A641094007EDCB6 /* LYBookNavigationBarController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LYBookNavigationBarController.xib; sourceTree = "<group>"; };
+		B807E90E1A641094007EDCB6 /* LYBookPageRootController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYBookPageRootController.h; sourceTree = "<group>"; };
+		B807E90F1A641094007EDCB6 /* LYBookPageRootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYBookPageRootController.m; sourceTree = "<group>"; };
+		B807E9101A641094007EDCB6 /* LYBookPageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYBookPageScrollView.h; sourceTree = "<group>"; };
+		B807E9111A641094007EDCB6 /* LYBookPageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYBookPageScrollView.m; sourceTree = "<group>"; };
+		B807E9121A641094007EDCB6 /* MagnifierView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagnifierView.h; sourceTree = "<group>"; };
+		B807E9131A641094007EDCB6 /* MagnifierView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagnifierView.m; sourceTree = "<group>"; };
+		B807E9141A641094007EDCB6 /* PageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewController.h; sourceTree = "<group>"; };
+		B807E9151A641094007EDCB6 /* PageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewController.m; sourceTree = "<group>"; };
+		B807E9161A641094007EDCB6 /* PageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageViewController.xib; sourceTree = "<group>"; };
+		B807E9181A641094007EDCB6 /* BookDigestNetModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookDigestNetModel.h; sourceTree = "<group>"; };
+		B807E9191A641094007EDCB6 /* BookDigestNetModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookDigestNetModel.m; sourceTree = "<group>"; };
+		B807E91A1A641094007EDCB6 /* BookMarkNetModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookMarkNetModel.h; sourceTree = "<group>"; };
+		B807E91B1A641094007EDCB6 /* BookMarkNetModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookMarkNetModel.m; sourceTree = "<group>"; };
+		B807E91C1A641094007EDCB6 /* ModelTransformationTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelTransformationTool.h; sourceTree = "<group>"; };
+		B807E91D1A641094007EDCB6 /* ModelTransformationTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelTransformationTool.m; sourceTree = "<group>"; };
+		B807E91E1A641094007EDCB6 /* NetworkSynchronizationForBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkSynchronizationForBook.h; sourceTree = "<group>"; };
+		B807E91F1A641094007EDCB6 /* NetworkSynchronizationForBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkSynchronizationForBook.m; sourceTree = "<group>"; };
+		B807E9201A641094007EDCB6 /* PulsingHaloLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PulsingHaloLayer.h; sourceTree = "<group>"; };
+		B807E9211A641094007EDCB6 /* PulsingHaloLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PulsingHaloLayer.m; sourceTree = "<group>"; };
+		B807E9221A641094007EDCB6 /* ReadProessNetModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadProessNetModel.h; sourceTree = "<group>"; };
+		B807E9231A641094007EDCB6 /* ReadProessNetModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadProessNetModel.m; sourceTree = "<group>"; };
+		B807E9241A641094007EDCB6 /* UserInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInformation.h; sourceTree = "<group>"; };
+		B807E9251A641094007EDCB6 /* UserInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInformation.m; sourceTree = "<group>"; };
+		B807E9261A641094007EDCB6 /* TouchReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchReader.h; sourceTree = "<group>"; };
+		B807E9271A641094007EDCB6 /* TouchReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchReader.m; sourceTree = "<group>"; };
+		B807E9291A641094007EDCB6 /* LYBookCatalogueParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYBookCatalogueParser.h; sourceTree = "<group>"; };
+		B807E92A1A641094007EDCB6 /* LYBookCatalogueParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYBookCatalogueParser.m; sourceTree = "<group>"; };
+		B807E92C1A641094007EDCB6 /* BSReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSReaderViewController.h; sourceTree = "<group>"; };
+		B807E92D1A641094007EDCB6 /* BSReaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSReaderViewController.m; sourceTree = "<group>"; };
+		B807E92E1A641094007EDCB6 /* GLPhotoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLPhotoController.h; sourceTree = "<group>"; };
+		B807E92F1A641094007EDCB6 /* GLPhotoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLPhotoController.m; sourceTree = "<group>"; };
+		B807E9301A641094007EDCB6 /* LYFontSizeControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYFontSizeControllerViewController.h; sourceTree = "<group>"; };
+		B807E9311A641094007EDCB6 /* LYFontSizeControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYFontSizeControllerViewController.m; sourceTree = "<group>"; };
+		B807E9321A641094007EDCB6 /* LYFontSizeControllerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LYFontSizeControllerViewController.xib; sourceTree = "<group>"; };
+		B807E9331A641094007EDCB6 /* MaskBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaskBackgroundView.h; sourceTree = "<group>"; };
+		B807E9341A641094007EDCB6 /* MaskBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaskBackgroundView.m; sourceTree = "<group>"; };
+		B807E9361A641094007EDCB6 /* SearchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchCell.h; sourceTree = "<group>"; };
+		B807E9371A641094007EDCB6 /* SearchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchCell.m; sourceTree = "<group>"; };
+		B807E9381A641094007EDCB6 /* SearchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchCell.xib; sourceTree = "<group>"; };
+		B807E9391A641094007EDCB6 /* SearchHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchHeader.h; sourceTree = "<group>"; };
+		B807E93A1A641094007EDCB6 /* SearchHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchHeader.m; sourceTree = "<group>"; };
+		B807E93B1A641094007EDCB6 /* SearchHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchHeader.xib; sourceTree = "<group>"; };
+		B807E93C1A641094007EDCB6 /* SearchModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchModel.h; sourceTree = "<group>"; };
+		B807E93D1A641094007EDCB6 /* SearchModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchModel.m; sourceTree = "<group>"; };
+		B807E93E1A641094007EDCB6 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		B807E93F1A641094007EDCB6 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		B807E9401A641094007EDCB6 /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		B807E9421A641094007EDCB6 /* GLBubble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBubble.h; sourceTree = "<group>"; };
+		B807E9431A641094007EDCB6 /* GLBubble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLBubble.m; sourceTree = "<group>"; };
+		B807E9441A641094007EDCB6 /* GLSliderBubbleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLSliderBubbleController.h; sourceTree = "<group>"; };
+		B807E9451A641094007EDCB6 /* GLSliderBubbleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLSliderBubbleController.m; sourceTree = "<group>"; };
+		B807E9461A641094007EDCB6 /* GLSliderBubbleController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GLSliderBubbleController.xib; sourceTree = "<group>"; };
+		B807E9471A641094007EDCB6 /* LYBookSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYBookSlider.h; sourceTree = "<group>"; };
+		B807E9481A641094007EDCB6 /* LYBookSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYBookSlider.m; sourceTree = "<group>"; };
+		B807E9491A641094007EDCB6 /* LYBookSliderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYBookSliderController.h; sourceTree = "<group>"; };
+		B807E94A1A641094007EDCB6 /* LYBookSliderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYBookSliderController.m; sourceTree = "<group>"; };
+		B807E94B1A641094007EDCB6 /* LYBookSliderController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LYBookSliderController.xib; sourceTree = "<group>"; };
+		B807E94D1A641094007EDCB6 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		B807E94E1A641094007EDCB6 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
+		B807E94F1A641094007EDCB6 /* VideoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoViewController.xib; sourceTree = "<group>"; };
+		B807E9511A641094007EDCB6 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		B807E9521A641094007EDCB6 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		B807E9531A641094007EDCB6 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		B807E9541A641094007EDCB6 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		B807E9551A641094007EDCB6 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		B807E9561A641094007EDCB6 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		B807E9571A641094007EDCB6 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		B807E9581A641094007EDCB6 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		B807E9591A641094007EDCB6 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		B807E95A1A641094007EDCB6 /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
+		B807E95B1A641094007EDCB6 /* ZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipArchive.m; sourceTree = "<group>"; };
+		B85578AC198A35B2008E7017 /* libOWReader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOWReader.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B85578AF198A35B2008E7017 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B85578BD198A35B2008E7017 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B85578C0198A35B2008E7017 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		B8C879AE1A727FE300085681 /* NotesLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotesLabel.h; sourceTree = "<group>"; };
+		B8C879AF1A727FE300085681 /* NotesLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotesLabel.m; sourceTree = "<group>"; };
+		B8D6435A1A64F4C7002C2799 /* OWReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OWReader.h; sourceTree = "<group>"; };
+		B8F127F01A74791D00CDA4E6 /* OWSceneModeSelectionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OWSceneModeSelectionButton.h; sourceTree = "<group>"; };
+		B8F127F11A74791D00CDA4E6 /* OWSceneModeSelectionButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OWSceneModeSelectionButton.m; sourceTree = "<group>"; };
+		DACC379919CE47520DFFF664 /* Pods-OWReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OWReader.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-OWReader/Pods-OWReader.debug.xcconfig"; sourceTree = "<group>"; };
+		E31BF8721A0350F1001B2171 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E34DF3841A15C9470095BE0D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		E34DF3861A15C94E0095BE0D /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		E34DF3881A15CA290095BE0D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E3F42DE319D7D31A00981EA2 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		E3F42DE519D7D33600981EA2 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+		E3F42F8619D9008400981EA2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B85578A9198A35B2008E7017 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E34DF3891A15CA290095BE0D /* AVFoundation.framework in Frameworks */,
+				E34DF3871A15C94E0095BE0D /* CoreAudio.framework in Frameworks */,
+				E34DF3851A15C9470095BE0D /* AudioToolbox.framework in Frameworks */,
+				E31BF8731A0350F1001B2171 /* QuartzCore.framework in Frameworks */,
+				B85578B0198A35B2008E7017 /* Foundation.framework in Frameworks */,
+				E3F42F8719D9008400981EA2 /* UIKit.framework in Frameworks */,
+				E3F42DE619D7D33600981EA2 /* libxml2.2.dylib in Frameworks */,
+				E3F42DE419D7D31A00981EA2 /* CoreText.framework in Frameworks */,
+				3E8037DF3A931B51A7887FE5 /* libPods-OWReader.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B807E8921A641094007EDCB6 /* OWReader */ = {
+			isa = PBXGroup;
+			children = (
+				B8D643591A64F399002C2799 /* config */,
+				B807E8971A641094007EDCB6 /* core data */,
+				B807E8A61A641094007EDCB6 /* JRReader.xcassets */,
+				B807E8AA1A641094007EDCB6 /* Models */,
+				B807E8C11A641094007EDCB6 /* OWBookButton.h */,
+				B807E8C21A641094007EDCB6 /* OWBookButton.m */,
+				B807E8C31A641094007EDCB6 /* OWReader-Prefix.pch */,
+				B807E8C41A641094007EDCB6 /* reader */,
+				B807E9501A641094007EDCB6 /* zip */,
+				B8D6435A1A64F4C7002C2799 /* OWReader.h */,
+			);
+			path = OWReader;
+			sourceTree = "<group>";
+		};
+		B807E8971A641094007EDCB6 /* core data */ = {
+			isa = PBXGroup;
+			children = (
+				B807E8981A641094007EDCB6 /* BookDigest.h */,
+				B807E8991A641094007EDCB6 /* BookDigest.m */,
+				B807E89A1A641094007EDCB6 /* Bookmark.h */,
+				B807E89B1A641094007EDCB6 /* Bookmark.m */,
+				B807E89C1A641094007EDCB6 /* BSCoreDataDelegate.h */,
+				B807E89D1A641094007EDCB6 /* BSCoreDataDelegate.m */,
+				B807E89E1A641094007EDCB6 /* Catalogue.h */,
+				B807E89F1A641094007EDCB6 /* Catalogue.m */,
+				B807E8A01A641094007EDCB6 /* LogicBook.xcdatamodeld */,
+				B807E8A41A641094007EDCB6 /* MyBook.h */,
+				B807E8A51A641094007EDCB6 /* MyBook.m */,
+			);
+			path = "core data";
+			sourceTree = "<group>";
+		};
+		B807E8AA1A641094007EDCB6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B807E8AB1A641094007EDCB6 /* DownloadingItem.h */,
+				B807E8AC1A641094007EDCB6 /* DownloadingItem.m */,
+				B807E8AD1A641094007EDCB6 /* InAppPurchaseManager.h */,
+				B807E8AE1A641094007EDCB6 /* InAppPurchaseManager.m */,
+				B807E8AF1A641094007EDCB6 /* JRBookDigestManager.h */,
+				B807E8B01A641094007EDCB6 /* JRBookDigestManager.m */,
+				B807E8B11A641094007EDCB6 /* LYBookDownloadManager.h */,
+				B807E8B21A641094007EDCB6 /* LYBookDownloadManager.m */,
+				B807E8B31A641094007EDCB6 /* LYBookHelper.h */,
+				B807E8B41A641094007EDCB6 /* LYBookHelper.m */,
+				B807E8B51A641094007EDCB6 /* LYBookItemData.h */,
+				B807E8B61A641094007EDCB6 /* LYBookItemData.m */,
+				B807E8B71A641094007EDCB6 /* LYBookmarkManager.h */,
+				B807E8B81A641094007EDCB6 /* LYBookmarkManager.m */,
+				B807E8B91A641094007EDCB6 /* LYBookRenderManager+Async.h */,
+				B807E8BA1A641094007EDCB6 /* LYBookRenderManager+Async.m */,
+				B807E8BB1A641094007EDCB6 /* LYBookRenderManager.h */,
+				B807E8BC1A641094007EDCB6 /* LYBookRenderManager.m */,
+				B807E8BD1A641094007EDCB6 /* LYBookSceneManager.h */,
+				B807E8BE1A641094007EDCB6 /* LYBookSceneManager.m */,
+				B807E8BF1A641094007EDCB6 /* MyBooksManager.h */,
+				B807E8C01A641094007EDCB6 /* MyBooksManager.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B807E8C41A641094007EDCB6 /* reader */ = {
+			isa = PBXGroup;
+			children = (
+				B807E8C51A641094007EDCB6 /* AudioViewController */,
+				B807E8D11A641094007EDCB6 /* book mark */,
+				B807E8DB1A641094007EDCB6 /* BookDigest */,
+				B807E8E21A641094007EDCB6 /* catalogue */,
+				B807E8EE1A641094007EDCB6 /* common */,
+				B807E8FE1A641094007EDCB6 /* JRBookDigestController */,
+				B807E9021A641094007EDCB6 /* JRBookNotesController */,
+				B807E9061A641094007EDCB6 /* page */,
+				B807E9281A641094007EDCB6 /* parser */,
+				B807E92B1A641094007EDCB6 /* root */,
+				B807E9351A641094007EDCB6 /* SearchViewController */,
+				B807E9411A641094007EDCB6 /* slider */,
+				B807E94C1A641094007EDCB6 /* VideoController */,
+			);
+			path = reader;
+			sourceTree = "<group>";
+		};
+		B807E8C51A641094007EDCB6 /* AudioViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B807E8C61A641094007EDCB6 /* AudioViewController.h */,
+				B807E8C71A641094007EDCB6 /* AudioViewController.m */,
+				B807E8C81A641094007EDCB6 /* AudioViewController.xib */,
+				B807E8C91A641094007EDCB6 /* Common.h */,
+				B807E8CA1A641094007EDCB6 /* Common.m */,
+				B807E8CB1A641094007EDCB6 /* MusicControlBtn.h */,
+				B807E8CC1A641094007EDCB6 /* MusicControlBtn.m */,
+				B807E8CD1A641094007EDCB6 /* PCSEQVisualizer.h */,
+				B807E8CE1A641094007EDCB6 /* PCSEQVisualizer.m */,
+				B807E8CF1A641094007EDCB6 /* UIImage+Color.h */,
+				B807E8D01A641094007EDCB6 /* UIImage+Color.m */,
+			);
+			path = AudioViewController;
+			sourceTree = "<group>";
+		};
+		B807E8D11A641094007EDCB6 /* book mark */ = {
+			isa = PBXGroup;
+			children = (
+				B807E8D21A641094007EDCB6 /* BookmarkController.h */,
+				B807E8D31A641094007EDCB6 /* BookmarkController.m */,
+				B807E8D41A641094007EDCB6 /* BookmarkController.xib */,
+				B807E8D51A641094007EDCB6 /* BookmarkTableCellCell.h */,
+				B807E8D61A641094007EDCB6 /* BookmarkTableCellCell.m */,
+				B807E8D71A641094007EDCB6 /* BookmarkTableCellCell.xib */,
+				B807E8D81A641094007EDCB6 /* BookmarkTableController.h */,
+				B807E8D91A641094007EDCB6 /* BookmarkTableController.m */,
+				B807E8DA1A641094007EDCB6 /* BookmarkTableController.xib */,
+			);
+			path = "book mark";
+			sourceTree = "<group>";
+		};
+		B807E8DB1A641094007EDCB6 /* BookDigest */ = {
+			isa = PBXGroup;
+			children = (
+				B807E8DC1A641094007EDCB6 /* BookDigestTableController.h */,
+				B807E8DD1A641094007EDCB6 /* BookDigestTableController.m */,
+				B807E8DE1A641094007EDCB6 /* BookDigestTableController.xib */,
+				B807E8DF1A641094007EDCB6 /* BookDigestTableViewCell.h */,
+				B807E8E01A641094007EDCB6 /* BookDigestTableViewCell.m */,
+				B807E8E11A641094007EDCB6 /* BookDigestTableViewCell.xib */,
+			);
+			path = BookDigest;
+			sourceTree = "<group>";
+		};
+		B807E8E21A641094007EDCB6 /* catalogue */ = {
+			isa = PBXGroup;
+			children = (
+				B807E8E31A641094007EDCB6 /* catalogeViewBtn.h */,
+				B807E8E41A641094007EDCB6 /* catalogeViewBtn.m */,
+				B807E8E51A641094007EDCB6 /* CatalogueTableCell.h */,
+				B807E8E61A641094007EDCB6 /* CatalogueTableCell.m */,
+				B807E8E71A641094007EDCB6 /* CatalogueTableCell.xib */,
+				B807E8E81A641094007EDCB6 /* CatalogueTableController.h */,
+				B807E8E91A641094007EDCB6 /* CatalogueTableController.m */,
+				B807E8EA1A641094007EDCB6 /* CatalogueTableController.xib */,
+				B807E8EB1A641094007EDCB6 /* CatalogueViewController.h */,
+				B807E8EC1A641094007EDCB6 /* CatalogueViewController.m */,
+				B807E8ED1A641094007EDCB6 /* CatalogueViewController.xib */,
+			);
+			path = catalogue;
+			sourceTree = "<group>";
+		};
+		B807E8EE1A641094007EDCB6 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				B807E8EF1A641094007EDCB6 /* GLAlphaInController.h */,
+				B807E8F01A641094007EDCB6 /* GLAlphaInController.m */,
+				B807E8F11A641094007EDCB6 /* GLAsyncMessageController.h */,
+				B807E8F21A641094007EDCB6 /* GLAsyncMessageController.m */,
+				B807E8F31A641094007EDCB6 /* GLAsyncMessageController.xib */,
+				B807E8F41A641094007EDCB6 /* GLGradientView.h */,
+				B807E8F51A641094007EDCB6 /* GLGradientView.m */,
+				B807E8F61A641094007EDCB6 /* GLLoading.h */,
+				B807E8F71A641094007EDCB6 /* GLLoading.m */,
+				B807E8F81A641094007EDCB6 /* GLNoiceBackgroundView.h */,
+				B807E8F91A641094007EDCB6 /* GLNoiceBackgroundView.m */,
+				B807E8FA1A641094007EDCB6 /* GLRoundButton.h */,
+				B807E8FB1A641094007EDCB6 /* GLRoundButton.m */,
+				B807E8FC1A641094007EDCB6 /* Shadow.h */,
+				B807E8FD1A641094007EDCB6 /* Shadow.m */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		B807E8FE1A641094007EDCB6 /* JRBookDigestController */ = {
+			isa = PBXGroup;
+			children = (
+				B807E8FF1A641094007EDCB6 /* DigestManagementViewController.h */,
+				B807E9001A641094007EDCB6 /* DigestManagementViewController.m */,
+				B807E9011A641094007EDCB6 /* DigestManagementViewController.xib */,
+			);
+			path = JRBookDigestController;
+			sourceTree = "<group>";
+		};
+		B807E9021A641094007EDCB6 /* JRBookNotesController */ = {
+			isa = PBXGroup;
+			children = (
+				B8C879AE1A727FE300085681 /* NotesLabel.h */,
+				B8C879AF1A727FE300085681 /* NotesLabel.m */,
+				B807E9031A641094007EDCB6 /* NotesViewController.h */,
+				B807E9041A641094007EDCB6 /* NotesViewController.m */,
+				B807E9051A641094007EDCB6 /* NotesViewController.xib */,
+			);
+			path = JRBookNotesController;
+			sourceTree = "<group>";
+		};
+		B807E9061A641094007EDCB6 /* page */ = {
+			isa = PBXGroup;
+			children = (
+				B807E9071A641094007EDCB6 /* LineView.h */,
+				B807E9081A641094007EDCB6 /* LineView.m */,
+				B807E9091A641094007EDCB6 /* LYBookNavigationBar.h */,
+				B807E90A1A641094007EDCB6 /* LYBookNavigationBar.m */,
+				B807E90B1A641094007EDCB6 /* LYBookNavigationBarController.h */,
+				B807E90C1A641094007EDCB6 /* LYBookNavigationBarController.m */,
+				B807E90D1A641094007EDCB6 /* LYBookNavigationBarController.xib */,
+				B807E90E1A641094007EDCB6 /* LYBookPageRootController.h */,
+				B807E90F1A641094007EDCB6 /* LYBookPageRootController.m */,
+				B807E9101A641094007EDCB6 /* LYBookPageScrollView.h */,
+				B807E9111A641094007EDCB6 /* LYBookPageScrollView.m */,
+				B807E9121A641094007EDCB6 /* MagnifierView.h */,
+				B807E9131A641094007EDCB6 /* MagnifierView.m */,
+				B807E9141A641094007EDCB6 /* PageViewController.h */,
+				B807E9151A641094007EDCB6 /* PageViewController.m */,
+				B807E9161A641094007EDCB6 /* PageViewController.xib */,
+				B807E9171A641094007EDCB6 /* Tools */,
+				B807E9261A641094007EDCB6 /* TouchReader.h */,
+				B807E9271A641094007EDCB6 /* TouchReader.m */,
+			);
+			path = page;
+			sourceTree = "<group>";
+		};
+		B807E9171A641094007EDCB6 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				B807E9181A641094007EDCB6 /* BookDigestNetModel.h */,
+				B807E9191A641094007EDCB6 /* BookDigestNetModel.m */,
+				B807E91A1A641094007EDCB6 /* BookMarkNetModel.h */,
+				B807E91B1A641094007EDCB6 /* BookMarkNetModel.m */,
+				B807E91C1A641094007EDCB6 /* ModelTransformationTool.h */,
+				B807E91D1A641094007EDCB6 /* ModelTransformationTool.m */,
+				B807E91E1A641094007EDCB6 /* NetworkSynchronizationForBook.h */,
+				B807E91F1A641094007EDCB6 /* NetworkSynchronizationForBook.m */,
+				B807E9201A641094007EDCB6 /* PulsingHaloLayer.h */,
+				B807E9211A641094007EDCB6 /* PulsingHaloLayer.m */,
+				B807E9221A641094007EDCB6 /* ReadProessNetModel.h */,
+				B807E9231A641094007EDCB6 /* ReadProessNetModel.m */,
+				B807E9241A641094007EDCB6 /* UserInformation.h */,
+				B807E9251A641094007EDCB6 /* UserInformation.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		B807E9281A641094007EDCB6 /* parser */ = {
+			isa = PBXGroup;
+			children = (
+				B807E9291A641094007EDCB6 /* LYBookCatalogueParser.h */,
+				B807E92A1A641094007EDCB6 /* LYBookCatalogueParser.m */,
+			);
+			path = parser;
+			sourceTree = "<group>";
+		};
+		B807E92B1A641094007EDCB6 /* root */ = {
+			isa = PBXGroup;
+			children = (
+				B807E92C1A641094007EDCB6 /* BSReaderViewController.h */,
+				B807E92D1A641094007EDCB6 /* BSReaderViewController.m */,
+				B807E92E1A641094007EDCB6 /* GLPhotoController.h */,
+				B807E92F1A641094007EDCB6 /* GLPhotoController.m */,
+				B807E9301A641094007EDCB6 /* LYFontSizeControllerViewController.h */,
+				B807E9311A641094007EDCB6 /* LYFontSizeControllerViewController.m */,
+				B807E9321A641094007EDCB6 /* LYFontSizeControllerViewController.xib */,
+				B807E9331A641094007EDCB6 /* MaskBackgroundView.h */,
+				B807E9341A641094007EDCB6 /* MaskBackgroundView.m */,
+				B8F127F01A74791D00CDA4E6 /* OWSceneModeSelectionButton.h */,
+				B8F127F11A74791D00CDA4E6 /* OWSceneModeSelectionButton.m */,
+			);
+			path = root;
+			sourceTree = "<group>";
+		};
+		B807E9351A641094007EDCB6 /* SearchViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B807E9361A641094007EDCB6 /* SearchCell.h */,
+				B807E9371A641094007EDCB6 /* SearchCell.m */,
+				B807E9381A641094007EDCB6 /* SearchCell.xib */,
+				B807E9391A641094007EDCB6 /* SearchHeader.h */,
+				B807E93A1A641094007EDCB6 /* SearchHeader.m */,
+				B807E93B1A641094007EDCB6 /* SearchHeader.xib */,
+				B807E93C1A641094007EDCB6 /* SearchModel.h */,
+				B807E93D1A641094007EDCB6 /* SearchModel.m */,
+				B807E93E1A641094007EDCB6 /* SearchViewController.h */,
+				B807E93F1A641094007EDCB6 /* SearchViewController.m */,
+				B807E9401A641094007EDCB6 /* SearchViewController.xib */,
+			);
+			path = SearchViewController;
+			sourceTree = "<group>";
+		};
+		B807E9411A641094007EDCB6 /* slider */ = {
+			isa = PBXGroup;
+			children = (
+				B807E9421A641094007EDCB6 /* GLBubble.h */,
+				B807E9431A641094007EDCB6 /* GLBubble.m */,
+				B807E9441A641094007EDCB6 /* GLSliderBubbleController.h */,
+				B807E9451A641094007EDCB6 /* GLSliderBubbleController.m */,
+				B807E9461A641094007EDCB6 /* GLSliderBubbleController.xib */,
+				B807E9471A641094007EDCB6 /* LYBookSlider.h */,
+				B807E9481A641094007EDCB6 /* LYBookSlider.m */,
+				B807E9491A641094007EDCB6 /* LYBookSliderController.h */,
+				B807E94A1A641094007EDCB6 /* LYBookSliderController.m */,
+				B807E94B1A641094007EDCB6 /* LYBookSliderController.xib */,
+			);
+			path = slider;
+			sourceTree = "<group>";
+		};
+		B807E94C1A641094007EDCB6 /* VideoController */ = {
+			isa = PBXGroup;
+			children = (
+				B807E94D1A641094007EDCB6 /* VideoViewController.h */,
+				B807E94E1A641094007EDCB6 /* VideoViewController.m */,
+				B807E94F1A641094007EDCB6 /* VideoViewController.xib */,
+			);
+			path = VideoController;
+			sourceTree = "<group>";
+		};
+		B807E9501A641094007EDCB6 /* zip */ = {
+			isa = PBXGroup;
+			children = (
+				B807E9511A641094007EDCB6 /* crypt.h */,
+				B807E9521A641094007EDCB6 /* ioapi.c */,
+				B807E9531A641094007EDCB6 /* ioapi.h */,
+				B807E9541A641094007EDCB6 /* mztools.c */,
+				B807E9551A641094007EDCB6 /* mztools.h */,
+				B807E9561A641094007EDCB6 /* unzip.c */,
+				B807E9571A641094007EDCB6 /* unzip.h */,
+				B807E9581A641094007EDCB6 /* zip.c */,
+				B807E9591A641094007EDCB6 /* zip.h */,
+				B807E95A1A641094007EDCB6 /* ZipArchive.h */,
+				B807E95B1A641094007EDCB6 /* ZipArchive.m */,
+			);
+			path = zip;
+			sourceTree = "<group>";
+		};
+		B85578A3198A35B2008E7017 = {
+			isa = PBXGroup;
+			children = (
+				B807E8921A641094007EDCB6 /* OWReader */,
+				B85578AE198A35B2008E7017 /* Frameworks */,
+				B85578AD198A35B2008E7017 /* Products */,
+				F54B78BC08E4BE22420ADA2D /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		B85578AD198A35B2008E7017 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B85578AC198A35B2008E7017 /* libOWReader.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B85578AE198A35B2008E7017 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E34DF3881A15CA290095BE0D /* AVFoundation.framework */,
+				E34DF3861A15C94E0095BE0D /* CoreAudio.framework */,
+				E34DF3841A15C9470095BE0D /* AudioToolbox.framework */,
+				E31BF8721A0350F1001B2171 /* QuartzCore.framework */,
+				E3F42F8619D9008400981EA2 /* UIKit.framework */,
+				E3F42DE519D7D33600981EA2 /* libxml2.2.dylib */,
+				E3F42DE319D7D31A00981EA2 /* CoreText.framework */,
+				B85578AF198A35B2008E7017 /* Foundation.framework */,
+				B85578BD198A35B2008E7017 /* XCTest.framework */,
+				B85578C0198A35B2008E7017 /* UIKit.framework */,
+				8F77ED5910A49180ED37C6F0 /* libPods-OWReader.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B8D643591A64F399002C2799 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				B807E8931A641094007EDCB6 /* BSConfig.h */,
+				B807E8941A641094007EDCB6 /* BSConfig.m */,
+				B807E8951A641094007EDCB6 /* BSGlobalAttri.h */,
+				B807E8961A641094007EDCB6 /* BSGlobalAttri.m */,
+				B807E8A71A641094007EDCB6 /* JRReaderNotificationName.h */,
+				B807E8A81A641094007EDCB6 /* LYBookConfig.h */,
+				B807E8A91A641094007EDCB6 /* LYBookConfig.m */,
+			);
+			name = config;
+			sourceTree = "<group>";
+		};
+		F54B78BC08E4BE22420ADA2D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC2EB1507B8BDEFEDD002658 /* Pods-OWReader.release.xcconfig */,
+				DACC379919CE47520DFFF664 /* Pods-OWReader.debug.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B85578AB198A35B2008E7017 /* OWReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B85578CF198A35B2008E7017 /* Build configuration list for PBXNativeTarget "OWReader" */;
+			buildPhases = (
+				64D371620D334662A6AF0C06 /* Check Pods Manifest.lock */,
+				B85578A8198A35B2008E7017 /* Sources */,
+				B85578A9198A35B2008E7017 /* Frameworks */,
+				B85578AA198A35B2008E7017 /* CopyFiles */,
+				E469F4CB034144BA92F1E0A3 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OWReader;
+			productName = OWCoreText;
+			productReference = B85578AC198A35B2008E7017 /* libOWReader.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B85578A4198A35B2008E7017 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = grenlight;
+			};
+			buildConfigurationList = B85578A7198A35B2008E7017 /* Build configuration list for PBXProject "OWReader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B85578A3198A35B2008E7017;
+			productRefGroup = B85578AD198A35B2008E7017 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B85578AB198A35B2008E7017 /* OWReader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		64D371620D334662A6AF0C06 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E469F4CB034144BA92F1E0A3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-OWReader/Pods-OWReader-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B85578A8198A35B2008E7017 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B807E97D1A641094007EDCB6 /* CatalogueTableController.m in Sources */,
+				B807E9951A641094007EDCB6 /* UserInformation.m in Sources */,
+				B807E98D1A641094007EDCB6 /* MagnifierView.m in Sources */,
+				B807E9601A641094007EDCB6 /* BSCoreDataDelegate.m in Sources */,
+				B807E9611A641094007EDCB6 /* Catalogue.m in Sources */,
+				B807E9801A641094007EDCB6 /* GLAsyncMessageController.m in Sources */,
+				B807E96F1A641094007EDCB6 /* MyBooksManager.m in Sources */,
+				B807E95D1A641094007EDCB6 /* BSGlobalAttri.m in Sources */,
+				B807E9A21A641094007EDCB6 /* LYBookSlider.m in Sources */,
+				B807E9831A641094007EDCB6 /* GLNoiceBackgroundView.m in Sources */,
+				B807E9771A641094007EDCB6 /* BookmarkTableCellCell.m in Sources */,
+				B807E9A81A641094007EDCB6 /* zip.c in Sources */,
+				B807E99D1A641094007EDCB6 /* SearchHeader.m in Sources */,
+				B807E9761A641094007EDCB6 /* BookmarkController.m in Sources */,
+				B807E9651A641094007EDCB6 /* DownloadingItem.m in Sources */,
+				B807E97F1A641094007EDCB6 /* GLAlphaInController.m in Sources */,
+				B807E9781A641094007EDCB6 /* BookmarkTableController.m in Sources */,
+				B807E9871A641094007EDCB6 /* NotesViewController.m in Sources */,
+				B807E9941A641094007EDCB6 /* ReadProessNetModel.m in Sources */,
+				B807E9981A641094007EDCB6 /* BSReaderViewController.m in Sources */,
+				B807E96B1A641094007EDCB6 /* LYBookmarkManager.m in Sources */,
+				B807E9901A641094007EDCB6 /* BookMarkNetModel.m in Sources */,
+				B807E9921A641094007EDCB6 /* NetworkSynchronizationForBook.m in Sources */,
+				B807E9661A641094007EDCB6 /* InAppPurchaseManager.m in Sources */,
+				B807E99F1A641094007EDCB6 /* SearchViewController.m in Sources */,
+				B807E95E1A641094007EDCB6 /* BookDigest.m in Sources */,
+				B807E99C1A641094007EDCB6 /* SearchCell.m in Sources */,
+				B807E99B1A641094007EDCB6 /* MaskBackgroundView.m in Sources */,
+				B807E97B1A641094007EDCB6 /* catalogeViewBtn.m in Sources */,
+				B807E96A1A641094007EDCB6 /* LYBookItemData.m in Sources */,
+				B807E9711A641094007EDCB6 /* AudioViewController.m in Sources */,
+				B807E9861A641094007EDCB6 /* DigestManagementViewController.m in Sources */,
+				B807E9721A641094007EDCB6 /* Common.m in Sources */,
+				B807E9A51A641094007EDCB6 /* ioapi.c in Sources */,
+				B807E9631A641094007EDCB6 /* MyBook.m in Sources */,
+				B807E95C1A641094007EDCB6 /* BSConfig.m in Sources */,
+				B807E9851A641094007EDCB6 /* Shadow.m in Sources */,
+				B807E9821A641094007EDCB6 /* GLLoading.m in Sources */,
+				B807E9741A641094007EDCB6 /* PCSEQVisualizer.m in Sources */,
+				B807E98C1A641094007EDCB6 /* LYBookPageScrollView.m in Sources */,
+				B807E9971A641094007EDCB6 /* LYBookCatalogueParser.m in Sources */,
+				B807E98B1A641094007EDCB6 /* LYBookPageRootController.m in Sources */,
+				B807E9681A641094007EDCB6 /* LYBookDownloadManager.m in Sources */,
+				B807E9691A641094007EDCB6 /* LYBookHelper.m in Sources */,
+				B807E96C1A641094007EDCB6 /* LYBookRenderManager+Async.m in Sources */,
+				B807E9881A641094007EDCB6 /* LineView.m in Sources */,
+				B807E96D1A641094007EDCB6 /* LYBookRenderManager.m in Sources */,
+				B807E9841A641094007EDCB6 /* GLRoundButton.m in Sources */,
+				B807E9A01A641094007EDCB6 /* GLBubble.m in Sources */,
+				B807E9791A641094007EDCB6 /* BookDigestTableController.m in Sources */,
+				B807E9621A641094007EDCB6 /* LogicBook.xcdatamodeld in Sources */,
+				B807E9A71A641094007EDCB6 /* unzip.c in Sources */,
+				B807E9731A641094007EDCB6 /* MusicControlBtn.m in Sources */,
+				B807E9A31A641094007EDCB6 /* LYBookSliderController.m in Sources */,
+				B807E9931A641094007EDCB6 /* PulsingHaloLayer.m in Sources */,
+				B807E96E1A641094007EDCB6 /* LYBookSceneManager.m in Sources */,
+				B807E95F1A641094007EDCB6 /* Bookmark.m in Sources */,
+				B807E98A1A641094007EDCB6 /* LYBookNavigationBarController.m in Sources */,
+				B807E98E1A641094007EDCB6 /* PageViewController.m in Sources */,
+				B807E97E1A641094007EDCB6 /* CatalogueViewController.m in Sources */,
+				B807E9A11A641094007EDCB6 /* GLSliderBubbleController.m in Sources */,
+				B807E9A61A641094007EDCB6 /* mztools.c in Sources */,
+				B807E9671A641094007EDCB6 /* JRBookDigestManager.m in Sources */,
+				B807E9991A641094007EDCB6 /* GLPhotoController.m in Sources */,
+				B807E9A41A641094007EDCB6 /* VideoViewController.m in Sources */,
+				B807E9891A641094007EDCB6 /* LYBookNavigationBar.m in Sources */,
+				B8F127F21A74791D00CDA4E6 /* OWSceneModeSelectionButton.m in Sources */,
+				B807E9911A641094007EDCB6 /* ModelTransformationTool.m in Sources */,
+				B8C879B01A727FE300085681 /* NotesLabel.m in Sources */,
+				B807E9701A641094007EDCB6 /* OWBookButton.m in Sources */,
+				B807E98F1A641094007EDCB6 /* BookDigestNetModel.m in Sources */,
+				B807E9811A641094007EDCB6 /* GLGradientView.m in Sources */,
+				B807E9A91A641094007EDCB6 /* ZipArchive.m in Sources */,
+				B807E99E1A641094007EDCB6 /* SearchModel.m in Sources */,
+				B807E97A1A641094007EDCB6 /* BookDigestTableViewCell.m in Sources */,
+				B807E97C1A641094007EDCB6 /* CatalogueTableCell.m in Sources */,
+				B807E9641A641094007EDCB6 /* LYBookConfig.m in Sources */,
+				B807E99A1A641094007EDCB6 /* LYFontSizeControllerViewController.m in Sources */,
+				B807E9961A641094007EDCB6 /* TouchReader.m in Sources */,
+				B807E9751A641094007EDCB6 /* UIImage+Color.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B85578CE198A35B2008E7017 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B85578D1198A35B2008E7017 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC2EB1507B8BDEFEDD002658 /* Pods-OWReader.release.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/OWCoreText.dst;
+				FRAMEWORK_SEARCH_PATHS = /usr/lib/libxml2.dylib;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OWReader/OWReader-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = OWReader;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B8FFC4A91A6412C600A7BEC6 /* debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = debug;
+		};
+		B8FFC4AA1A6412C600A7BEC6 /* debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DACC379919CE47520DFFF664 /* Pods-OWReader.debug.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/OWCoreText.dst;
+				FRAMEWORK_SEARCH_PATHS = /usr/lib/libxml2.dylib;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OWReader/OWReader-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = OWReader;
+				SKIP_INSTALL = YES;
+			};
+			name = debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B85578A7198A35B2008E7017 /* Build configuration list for PBXProject "OWReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B85578CE198A35B2008E7017 /* Release */,
+				B8FFC4A91A6412C600A7BEC6 /* debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = debug;
+		};
+		B85578CF198A35B2008E7017 /* Build configuration list for PBXNativeTarget "OWReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B85578D1198A35B2008E7017 /* Release */,
+				B8FFC4AA1A6412C600A7BEC6 /* debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B807E8A01A641094007EDCB6 /* LogicBook.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B807E8A11A641094007EDCB6 /* LogicBook3.xcdatamodel */,
+				B807E8A21A641094007EDCB6 /* LogicBook4.xcdatamodel */,
+				B807E8A31A641094007EDCB6 /* LogicBook5.xcdatamodel */,
+			);
+			currentVersion = B807E8A31A641094007EDCB6 /* LogicBook5.xcdatamodel */;
+			path = LogicBook.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B85578A4198A35B2008E7017 /* Project object */;
+}

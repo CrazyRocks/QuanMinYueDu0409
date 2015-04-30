@@ -1,0 +1,1 @@
+../../../../OWReader/OWReader/core data/BSCoreDataDelegate.h

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="1" customClass="LYRefreshView2">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="中国全民阅读移动阅读书库" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRJ-T5-rQ3">
+                    <rect key="frame" x="80" y="6" width="160" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="MiI-1O-rf9"/>
+                        <constraint firstAttribute="height" constant="21" id="Til-Lq-BM2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.040908063100000003" green="0.8602236244" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="highlightedColor" red="0.044718317020000002" green="0.55661114060000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="下拉即可刷新..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Oo-rE-zGO">
+                    <rect key="frame" x="160" y="31" width="117" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="bPx-Ph-gwX"/>
+                        <constraint firstAttribute="width" constant="117" id="xt5-BG-b3R"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yS9-Za-cAK" customClass="LYRefreshIndicator">
+                    <rect key="frame" x="125" y="30" width="24" height="24"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="QPE-3N-Naq"/>
+                        <constraint firstAttribute="width" constant="24" id="aee-1K-KRC"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.85213462750000002" green="0.85213462750000002" blue="0.85213462750000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="8Oo-rE-zGO" firstAttribute="top" secondItem="dRJ-T5-rQ3" secondAttribute="bottom" constant="4" id="1Ok-Kw-INJ"/>
+                <constraint firstItem="dRJ-T5-rQ3" firstAttribute="top" secondItem="1" secondAttribute="top" constant="6" id="DPw-SS-eqb"/>
+                <constraint firstAttribute="centerX" secondItem="8Oo-rE-zGO" secondAttribute="centerX" constant="-58.5" id="JsM-rH-xip"/>
+                <constraint firstAttribute="centerX" secondItem="yS9-Za-cAK" secondAttribute="centerX" constant="23" id="WyG-2b-xNY"/>
+                <constraint firstItem="yS9-Za-cAK" firstAttribute="top" secondItem="dRJ-T5-rQ3" secondAttribute="bottom" constant="3" id="tK6-ZZ-2yR"/>
+                <constraint firstAttribute="centerX" secondItem="dRJ-T5-rQ3" secondAttribute="centerX" id="z6g-yC-YmR"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="_refreshStatusLabel" destination="8Oo-rE-zGO" id="8OB-0B-gDz"/>
+                <outlet property="indicator" destination="yS9-Za-cAK" id="xGx-20-taB"/>
+                <outlet property="titleLabel" destination="dRJ-T5-rQ3" id="mhX-fP-QD3"/>
+            </connections>
+            <point key="canvasLocation" x="17" y="399"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

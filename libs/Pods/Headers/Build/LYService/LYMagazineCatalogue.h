@@ -1,0 +1,1 @@
+../../../../LYService/LYService/core data/LYMagazineCatalogue.h

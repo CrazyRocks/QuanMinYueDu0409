@@ -1,0 +1,41 @@
+{
+  "name": "LYMagazinesStand",
+  "version": "0.0.1",
+  "license": "MIT",
+  "summary": "A LYMagazinesStand framework.",
+  "homepage": "http://www.xplays.com",
+  "authors": {
+    "grenlight": "grenlight@icloud.com"
+  },
+  "source": {
+    "path": "~/Desktop/CocoaPods2/LYMagazinesStand"
+  },
+  "source_files": [
+    "LYMagazinesStand/*.{h,m}",
+    "LYMagazinesStand/**/*.{h,m}"
+  ],
+  "preserve_paths": "**/*.a",
+  "requires_arc": true,
+  "platforms": {
+    "ios": "6.0"
+  },
+  "frameworks": [
+    "CoreGraphics",
+    "QuartzCore",
+    "CoreData",
+    "CoreText"
+  ],
+  "libraries": [
+    "z",
+    "xml2.2"
+  ],
+  "xcconfig": {
+    "HEADER_SEARCH_PATHS": "$SDKROOT/usr/include/libxml2"
+  },
+  "resources": [
+    "LYMagazinesStand/**/*.png",
+    "LYMagazinesStand/**/*.xib",
+    "LYMagazinesStand/**/*.xcdatamodeld"
+  ],
+  "prefix_header_contents": "    #ifdef __OBJC__\n        #import <UIKit/UIKit.h>\n        #import <Foundation/Foundation.h>\n        #import \"LYMagGlobal.h\"\n    #endif /* __OBJC__*/\n"
+}

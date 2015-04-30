@@ -1,0 +1,7 @@
+#include "Pods-OWCoreText-pop.xcconfig"
+CLANG_CXX_LANGUAGE_STANDARD = ${PODS_OWCORETEXT_POP_CLANG_CXX_LANGUAGE_STANDARD}
+CLANG_CXX_LIBRARY = ${PODS_OWCORETEXT_POP_CLANG_CXX_LIBRARY}
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Build" "${PODS_ROOT}/Headers/Build/pop" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/LYService" "${PODS_ROOT}/Headers/Public/Mantle" "${PODS_ROOT}/Headers/Public/Masonry" "${PODS_ROOT}/Headers/Public/OWCoreText" "${PODS_ROOT}/Headers/Public/OWKit" "${PODS_ROOT}/Headers/Public/OWReader" "${PODS_ROOT}/Headers/Public/SDWebImage" "${PODS_ROOT}/Headers/Public/ZXingObjC" "${PODS_ROOT}/Headers/Public/pop"
+OTHER_LDFLAGS = ${PODS_OWCORETEXT_POP_OTHER_LDFLAGS} -ObjC
+PODS_ROOT = ${SRCROOT}

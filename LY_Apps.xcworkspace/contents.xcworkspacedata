@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:libs/OWReader/OWReader.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:libs/OWCoreText/OWCoreText.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:libs/OWKit/OWKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:libs/LYService/LYService.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TheReading/TheReading.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

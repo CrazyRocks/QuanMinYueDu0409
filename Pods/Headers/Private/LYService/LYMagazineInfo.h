@@ -1,0 +1,1 @@
+../../../../libs/LYService/LYService/manager/LYMagazineInfo.h

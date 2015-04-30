@@ -1,0 +1,50 @@
+{
+  "name": "OWCoreText",
+  "version": "0.0.2",
+  "license": "MIT",
+  "summary": "A CoreText framework.",
+  "homepage": "http://www.xplays.com",
+  "authors": {
+    "grenlight": "grenlight@icloud.com"
+  },
+  "source": {
+    "path": "~/Desktop/CocoaPods2/OWCoreText"
+  },
+  "source_files": [
+    "OWCoreText/*.{h,m}",
+    "OWCoreText/**/*.{h,m}"
+  ],
+  "exclude_files": "OWCoreText/html_parser/*.{h,m}",
+  "requires_arc": true,
+  "preserve_paths": "**/*.a",
+  "xcconfig": {
+    "HEADER_SEARCH_PATHS": "$SDKROOT/usr/include/libxml2"
+  },
+  "platforms": {
+    "ios": "6.0"
+  },
+  "frameworks": [
+    "CoreGraphics",
+    "QuartzCore",
+    "CoreText"
+  ],
+  "libraries": [
+    "z",
+    "xml2.2"
+  ],
+  "prefix_header_contents": [
+    "#import <Foundation/Foundation.h>",
+    "#import <UIKit/UIKit.h>",
+    "#import <AVFoundation/AVFoundation.h>",
+    "#import <AVFoundation/AVFoundation.h>",
+    "#import <CoreMedia/CoreMedia.h>"
+  ],
+  "resources": "OWCoreText/**/*.xib",
+  "subspecs": [
+    {
+      "name": "NoARC",
+      "source_files": "OWCoreText/html_parser/*.{h,m}",
+      "requires_arc": false
+    }
+  ]
+}

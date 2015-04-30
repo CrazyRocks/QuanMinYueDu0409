@@ -1,0 +1,1 @@
+../../../../LYService/LYService/data module/LYMagazineTableCellData.h

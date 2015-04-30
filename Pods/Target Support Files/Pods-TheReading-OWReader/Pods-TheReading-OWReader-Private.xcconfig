@@ -1,0 +1,6 @@
+#include "Pods-TheReading-OWReader.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/OWReader" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/LYService" "${PODS_ROOT}/Headers/Public/Mantle" "${PODS_ROOT}/Headers/Public/Masonry" "${PODS_ROOT}/Headers/Public/OWCoreText" "${PODS_ROOT}/Headers/Public/OWKit" "${PODS_ROOT}/Headers/Public/OWReader" "${PODS_ROOT}/Headers/Public/SDWebImage" "${PODS_ROOT}/Headers/Public/pop" ${PODS_THEREADING_OWREADER_HEADER_SEARCH_PATHS}
+OTHER_LDFLAGS = ${PODS_THEREADING_OWREADER_OTHER_LDFLAGS} -ObjC
+PODS_ROOT = ${SRCROOT}
+SKIP_INSTALL = YES

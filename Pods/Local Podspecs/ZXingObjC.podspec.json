@@ -1,0 +1,26 @@
+{
+  "name": "ZXingObjC",
+  "version": "0.0.1",
+  "license": "MIT",
+  "summary": "A ZXingObjC framework.",
+  "homepage": "http://www.xplays.com",
+  "authors": {
+    "grenlight": "grenlight@icloud.com"
+  },
+  "source": {
+    "path": "~/Desktop/CocoaPods2/ZXingObjC"
+  },
+  "source_files": [
+    "ZXingObjC/*.{h,m}",
+    "ZXingObjC/**/*.{h,m}"
+  ],
+  "preserve_paths": "**/*.a",
+  "requires_arc": true,
+  "platforms": {
+    "ios": "6.0"
+  },
+  "frameworks": [
+    "CoreGraphics",
+    "QuartzCore"
+  ]
+}

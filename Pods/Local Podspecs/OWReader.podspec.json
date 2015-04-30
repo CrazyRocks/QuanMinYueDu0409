@@ -1,0 +1,58 @@
+{
+  "name": "OWReader",
+  "version": "0.0.3",
+  "license": "MIT",
+  "summary": "A OWReader framework.",
+  "homepage": "http://www.xplays.com",
+  "authors": {
+    "grenlight": "grenlight@icloud.com"
+  },
+  "source": {
+    "path": "OWReader"
+  },
+  "source_files": [
+    "OWReader/*.{c,h,m}",
+    "OWReader/**/*.{c,h,m}"
+  ],
+  "exclude_files": [
+    "OWReader/zip/ZipArchive.{h,m}",
+    "OWReader/zip/zip.{c,h}",
+    "OWReader/zip/unzip.{c,h}",
+    "OWReader/zip/mztools.{c,h}"
+  ],
+  "requires_arc": true,
+  "preserve_paths": "**/*.a",
+  "platforms": {
+    "ios": "6.0"
+  },
+  "frameworks": [
+    "CoreGraphics",
+    "QuartzCore",
+    "CoreData",
+    "CoreText"
+  ],
+  "libraries": [
+    "z",
+    "xml2.2"
+  ],
+  "xcconfig": {
+    "HEADER_SEARCH_PATHS": "$SDKROOT/usr/include/libxml2"
+  },
+  "resources": [
+    "OWReader/**/*.xib",
+    "OWReader/**/*.xcdatamodeld"
+  ],
+  "prefix_header_contents": "#ifdef __OBJC__\n#import <UIKit/UIKit.h>\n#import <Foundation/Foundation.h>\n#import <Masonry/Masonry.h>\n\n#endif /* __OBJC__*/\n",
+  "subspecs": [
+    {
+      "name": "NoARC",
+      "source_files": [
+        "OWReader/zip/ZipArchive.{h,m}",
+        "OWReader/zip/zip.{c,h}",
+        "OWReader/zip/unzip.{c,h}",
+        "OWReader/zip/mztools.{c,h}"
+      ],
+      "requires_arc": false
+    }
+  ]
+}

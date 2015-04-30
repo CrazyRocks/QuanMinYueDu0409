@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6198" systemVersion="14A298i" minimumToolsVersion="Xcode 4.5" macOSVersion="Automatic" iOSVersion="iOS 6.0">
+    <entity name="Bookmark" representedClassName="Bookmark" syncable="YES">
+        <attribute name="addDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="bookID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="catIndex" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="catName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="position" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="summary" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Catalogue" representedClassName="Catalogue" syncable="YES">
+        <attribute name="bookID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="children" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="cID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="cName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="depth" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="filePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isAlbum" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="navIndex" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="pageCounts" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="startPages" optional="YES" attributeType="Transformable" syncable="YES"/>
+    </entity>
+    <entity name="MyBook" representedClassName="MyBook" syncable="YES">
+        <attribute name="accessDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="addDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="author" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bookID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bookName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bookName_EN" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="categoryID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="categoryName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cycle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="downloadingProgress" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="downloadingSortID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="downloadURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="expiringDate" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="expiringMessage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="introduce" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isBook" optional="YES" attributeType="Boolean" defaultValueString="YES" syncable="YES"/>
+        <attribute name="isDownloaded" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="isInCloud" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="isPageParsed" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="issueString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastReadCID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="lastReadPosition" optional="YES" attributeType="Integer 32" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="pageCounts" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="publishName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="readProgress" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="smallCover" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sortID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="unitDomain" optional="YES" attributeType="String" defaultValueString="0" syncable="YES"/>
+        <attribute name="unitName" optional="YES" attributeType="String" defaultValueString="0" syncable="YES"/>
+        <attribute name="usedFontSizeScale" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Bookmark" positionX="0" positionY="0" width="128" height="135"/>
+        <element name="Catalogue" positionX="0" positionY="0" width="128" height="195"/>
+        <element name="MyBook" positionX="0" positionY="0" width="128" height="495"/>
+    </elements>
+</model>

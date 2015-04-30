@@ -1,0 +1,31 @@
+{
+  "name": "LYService",
+  "version": "0.0.1",
+  "license": "MIT",
+  "summary": "A LYService framework.",
+  "homepage": "http://www.xplays.com",
+  "authors": {
+    "grenlight": "grenlight@icloud.com"
+  },
+  "source": {
+    "path": "~/Desktop/CocoaPods2/LYService"
+  },
+  "source_files": [
+    "LYService/*.{h,m}",
+    "LYService/**/*.{h,m}"
+  ],
+  "preserve_paths": "**/*.a",
+  "requires_arc": true,
+  "platforms": {
+    "ios": "6.0"
+  },
+  "frameworks": [
+    "CoreGraphics",
+    "QuartzCore"
+  ],
+  "resources": [
+    "LYService/**/*.png",
+    "LYService/**/*.xib",
+    "LYService/**/*.xcdatamodeld"
+  ]
+}

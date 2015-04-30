@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <development version="6000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LYBookShelfController">
+            <connections>
+                <outlet property="collectionView" destination="xJZ-Qw-bXK" id="gk3-Es-Hc9"/>
+                <outlet property="messageBT" destination="jAu-ei-LZW" id="T4n-HR-FHV"/>
+                <outlet property="view" destination="kbe-8a-kwH" id="nZ9-90-1RZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="kbe-8a-kwH">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <collectionView opaque="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="xJZ-Qw-bXK">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="2" id="8Xj-MS-MmH">
+                        <size key="itemSize" width="100" height="174"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="5" minY="15" maxX="5" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <cells/>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jAu-ei-LZW">
+                    <rect key="frame" x="10" y="14" width="90" height="113"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" image="shelf_addBook_normal">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="rightButtonTapped:" destination="-1" eventType="touchUpInside" id="J4x-Hm-JWf"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.2372104854" green="0.56645459440000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="xJZ-Qw-bXK" firstAttribute="leading" secondItem="kbe-8a-kwH" secondAttribute="leading" id="9FW-9r-DcD"/>
+                <constraint firstItem="jAu-ei-LZW" firstAttribute="leading" secondItem="kbe-8a-kwH" secondAttribute="leading" constant="10" id="DTr-U4-KmO"/>
+                <constraint firstItem="jAu-ei-LZW" firstAttribute="top" secondItem="kbe-8a-kwH" secondAttribute="top" constant="14" id="RyQ-cZ-xWx"/>
+                <constraint firstItem="xJZ-Qw-bXK" firstAttribute="top" secondItem="kbe-8a-kwH" secondAttribute="top" id="aMF-7m-AgI"/>
+                <constraint firstAttribute="bottom" secondItem="xJZ-Qw-bXK" secondAttribute="bottom" id="pRR-rk-Mg0"/>
+                <constraint firstAttribute="trailing" secondItem="xJZ-Qw-bXK" secondAttribute="trailing" id="vC0-Bk-qFa"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="shelf_addBook_normal" width="90" height="113"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

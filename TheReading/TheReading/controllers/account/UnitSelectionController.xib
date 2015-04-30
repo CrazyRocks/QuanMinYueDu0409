@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C81f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UnitSelectionController">
+            <connections>
+                <outlet property="_tableView" destination="etO-PI-PLL" id="QxE-Wr-0Bu"/>
+                <outlet property="sectionHeader" destination="nZs-pO-tqc" id="e6g-Zq-1PI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_bg_img" translatesAutoresizingMaskIntoConstraints="NO" id="L91-lS-G1F">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="etO-PI-PLL">
+                    <rect key="frame" x="0.0" y="60" width="600" height="540"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="etO-PI-PLL" secondAttribute="bottom" id="2Yh-3N-uyv"/>
+                <constraint firstItem="etO-PI-PLL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="HCt-Me-ZBO"/>
+                <constraint firstItem="etO-PI-PLL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="Ldc-v6-Djh"/>
+                <constraint firstItem="L91-lS-G1F" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="MuG-CL-hnv"/>
+                <constraint firstAttribute="bottom" secondItem="L91-lS-G1F" secondAttribute="bottom" id="Tm8-0f-ccW"/>
+                <constraint firstItem="L91-lS-G1F" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="XfF-mf-u03"/>
+                <constraint firstAttribute="trailing" secondItem="etO-PI-PLL" secondAttribute="trailing" id="YzT-7A-19O"/>
+                <constraint firstAttribute="trailing" secondItem="L91-lS-G1F" secondAttribute="trailing" id="tBb-2V-syI"/>
+            </constraints>
+            <point key="canvasLocation" x="320" y="304"/>
+        </view>
+        <view contentMode="scaleToFill" id="nZs-pO-tqc">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="51"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择单位机构" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UT1-IE-zOD">
+                    <rect key="frame" x="20" y="15" width="219" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="PQP-1N-OTs"/>
+                        <constraint firstAttribute="width" constant="219" id="ovq-fr-hAG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.039476799242424199" green="0.039476799242424199" blue="0.039476799242424199" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="UT1-IE-zOD" firstAttribute="leading" secondItem="nZs-pO-tqc" secondAttribute="leading" constant="20" id="Ouj-hK-z5a"/>
+                <constraint firstAttribute="centerY" secondItem="UT1-IE-zOD" secondAttribute="centerY" id="r5o-AT-fQI"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="667" y="20.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="login_bg_img" width="320" height="480"/>
+    </resources>
+</document>

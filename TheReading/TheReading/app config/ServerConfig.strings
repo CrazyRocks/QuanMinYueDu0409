@@ -1,0 +1,36 @@
+/* 
+  ServerConfig.strings
+  PublicLibrary
+ 
+
+  Created by grenlight on 14-1-15.
+  Copyright (c) 2014年 grenlight. All rights reserved.
+*/
+
+"ServiceName" = "全民阅读";
+"ApplicationID" = "528ed763-f895-4c3f-92ec-85c4b8a33278";
+
+//用于检查app的版本更新
+"AppID" = "QM_IOS";
+
+//是否需要在左侧边栏显示 【首页】, YES 为显示， NO 为不显示
+"NeedsShowHomePage" = "NO";
+
+/*
+ 是否开启微博分享, , YES 为开启， NO 为关闭
+ 开启微博分享功能需要注意：必须配置 URL Types,且每个app须不一样。
+ */
+"AllowToShare" = "NO";
+
+//文章翻篇  1：横翻， 2：坚翻
+"versionOfTheArticleDetailView" = 2;
+
+/*
+ appCompany
+ 主要用于识别用户是用的龙源的app扫描的图书二维码
+ 以及是由龙源的app发起的下载请求
+ */
+"AppCompany" =  "BcT10L2jsP5NN8QS51bBgkKgh4x4Xy25eCJFLcqOD50=";
+
+/*下拉刷新时的文字定义*/
+"下拉刷新提示文字" = "中国全民阅读移动书库";

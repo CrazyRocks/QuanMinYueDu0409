@@ -1,0 +1,31 @@
+{
+  "name": "OWKit",
+  "version": "0.0.6",
+  "license": "MIT",
+  "summary": "A OOOOWW UIKit framework.",
+  "homepage": "http://www.xplays.com",
+  "authors": {
+    "grenlight": "grenlight@icloud.com"
+  },
+  "source": {
+    "path": "OWkit"
+  },
+  "source_files": [
+    "OWKit/*.{h,m}",
+    "OWKit/**/*.{h,m}"
+  ],
+  "preserve_paths": "**/*.a",
+  "requires_arc": true,
+  "platforms": {
+    "ios": "6.0"
+  },
+  "frameworks": [
+    "CoreGraphics",
+    "QuartzCore"
+  ],
+  "resources": [
+    "OWKit/**/*.png",
+    "OWKit/**/*.xib"
+  ],
+  "prefix_header_contents": "    #ifdef __OBJC__\n        #import <UIKit/UIKit.h>\n        #import <Foundation/Foundation.h>\n        #import \"OWKitGlobal.h\"\n        #import <Masonry/Masonry.h>\n\n    #endif /* __OBJC__*/\n"
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <development version="6000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OWSubNavigationController">
+            <connections>
+                <outlet property="navigationBar" destination="bBV-2R-8Jd" id="Tzo-e3-9Ki"/>
+                <outlet property="udButton" destination="XNr-EP-Y36" id="ZaT-8S-ntB"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="299"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bBV-2R-8Jd" customClass="OWSubNavigationBar">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="42"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="zaq-ZO-cQm"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XNr-EP-Y36" customClass="OWUpDownButton">
+                    <rect key="frame" x="276" y="-1" width="44" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="8Cs-gZ-Ovv"/>
+                        <constraint firstAttribute="width" constant="44" id="UJh-il-FTO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="expandCategoriesPanel:" destination="-1" eventType="touchUpInside" id="4St-4v-yec"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="bBV-2R-8Jd" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="BsH-xn-RdN"/>
+                <constraint firstItem="XNr-EP-Y36" firstAttribute="top" secondItem="1" secondAttribute="top" constant="-1" id="d1s-2O-gbe"/>
+                <constraint firstAttribute="trailing" secondItem="bBV-2R-8Jd" secondAttribute="trailing" id="niX-dF-wgI"/>
+                <constraint firstAttribute="trailing" secondItem="XNr-EP-Y36" secondAttribute="trailing" id="v2Q-vY-a9C"/>
+                <constraint firstItem="bBV-2R-8Jd" firstAttribute="top" secondItem="1" secondAttribute="top" id="xBm-cH-8Hf"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="171" y="276.5"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

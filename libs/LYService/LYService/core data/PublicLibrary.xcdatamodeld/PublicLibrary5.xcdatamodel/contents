@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6254" systemVersion="14C81f" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="LYArticle" representedClassName="LYArticle" syncable="YES">
+        <attribute name="accessTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="author" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="canRead" optional="YES" attributeType="Boolean" defaultValueString="YES" syncable="YES"/>
+        <attribute name="categoryID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="favoriteID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="images" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="isFavorite" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="magFormattedIssue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="magGUID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="magIcon" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="magIssue" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="magName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="magYear" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="publishDate" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="subTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="summary" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="titleID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="webURL" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="LYArticleCategory" representedClassName="LYArticleCategory" syncable="YES">
+        <attribute name="categoryID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fillColor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isFavorite" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sort" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="strokeColor" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="LYArticleSummary" representedClassName="LYArticleSummary" syncable="YES">
+        <attribute name="articleID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="author" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="categoryID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="magazineGUID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="magazineIconURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="magazineID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="magazineIssue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="magazineName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="magazineYear" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="publishDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="publishDateFormatString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="summary" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thumbnailURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="LYFavorite" representedClassName="LYFavorite" syncable="YES">
+        <attribute name="addDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="author" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contentDownloaded" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="favoriteID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isAlreadySync" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="kind" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="magazineIconURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="magGUID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="magIssue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="magName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="magYear" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="publishDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="publishDateFormatString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="summary" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thumbnailURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="titleID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="LYFunctionModule" representedClassName="FunctionModule" syncable="YES">
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="funcName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iconName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sort" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="LYMagazine" representedClassName="LYMagazine" syncable="YES">
+        <attribute name="addDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="cover" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="downloadingProgress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isDownloaded" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="issue" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="magGUID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="magName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="year" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="LYMagazineCatalogue" representedClassName="LYMagazineCatalogue" syncable="YES">
+        <attribute name="column" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="magGUID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="magIssue" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="magYear" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="titleID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userID" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="LYMagazineItem" representedClassName="LYMagazineItem" syncable="YES">
+        <attribute name="addDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="cover" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="issue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isUserFocused" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="isUserSubscription" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="magGUID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="magIconURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="magName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sortID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="year" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="LYMenu" representedClassName="LYMenu" syncable="YES">
+        <attribute name="childs" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="descript" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageDisplayMode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="level" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="menuCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="menuName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="menuValue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="openMode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="orderNumber" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="LYUserEvent" representedClassName="LYUserEvent" syncable="YES">
+        <attribute name="cID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eventType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="operationTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="summary" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="LYArticle" positionX="0" positionY="0" width="128" height="343"/>
+        <element name="LYArticleCategory" positionX="0" positionY="0" width="128" height="135"/>
+        <element name="LYArticleSummary" positionX="0" positionY="0" width="128" height="255"/>
+        <element name="LYFavorite" positionX="0" positionY="0" width="128" height="313"/>
+        <element name="LYFunctionModule" positionX="0" positionY="0" width="128" height="105"/>
+        <element name="LYMagazine" positionX="0" positionY="0" width="128" height="180"/>
+        <element name="LYMagazineCatalogue" positionX="0" positionY="0" width="128" height="150"/>
+        <element name="LYMagazineItem" positionX="0" positionY="0" width="128" height="225"/>
+        <element name="LYMenu" positionX="0" positionY="153" width="128" height="195"/>
+        <element name="LYUserEvent" positionX="0" positionY="0" width="128" height="120"/>
+    </elements>
+</model>

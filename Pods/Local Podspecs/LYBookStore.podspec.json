@@ -1,0 +1,58 @@
+{
+  "name": "LYBookStore",
+  "version": "0.0.2",
+  "license": "MIT",
+  "summary": "A LYBookStore framework.",
+  "homepage": "http://www.xplays.com",
+  "authors": {
+    "grenlight": "grenlight@icloud.com"
+  },
+  "source": {
+    "path": "~/Desktop/CocoaPods2/LYBookStore"
+  },
+  "source_files": [
+    "LYBookStore/*.{c,h,m}",
+    "LYBookStore/**/*.{c,h,m}"
+  ],
+  "exclude_files": [
+    "LYBookStore/zip/ZipArchive.{h,m}",
+    "LYBookStore/zip/zip.{c,h}",
+    "LYBookStore/zip/unzip.{c,h}",
+    "LYBookStore/zip/mztools.{c,h}"
+  ],
+  "requires_arc": true,
+  "preserve_paths": "**/*.a",
+  "platforms": {
+    "ios": "6.0"
+  },
+  "frameworks": [
+    "CoreGraphics",
+    "QuartzCore",
+    "CoreData",
+    "CoreText"
+  ],
+  "libraries": [
+    "z",
+    "xml2.2"
+  ],
+  "xcconfig": {
+    "HEADER_SEARCH_PATHS": "$SDKROOT/usr/include/libxml2"
+  },
+  "resources": [
+    "LYBookStore/**/*.xib",
+    "LYBookStore/**/*.xcdatamodeld"
+  ],
+  "prefix_header_contents": "    #ifdef __OBJC__\n        #import <UIKit/UIKit.h>\n        #import <Foundation/Foundation.h>\n\n        #import <OWReader/JRReaderNotificationName.h>\n\n        #import <OWReader/LYBookConfig.h>\n        #import <OWReader/BSConfig.h>\n        #import <OWReader/BSGlobalAttri.h>\n        #import <OWReader/LYBookSceneManager.h>\n        #import <OWReader/LYBookHelper.h>\n        #import <Masonry/Masonry.h>\n\n    #endif /* __OBJC__*/\n",
+  "subspecs": [
+    {
+      "name": "NoARC",
+      "source_files": [
+        "LYBookStore/zip/ZipArchive.{h,m}",
+        "LYBookStore/zip/zip.{c,h}",
+        "LYBookStore/zip/unzip.{c,h}",
+        "LYBookStore/zip/mztools.{c,h}"
+      ],
+      "requires_arc": false
+    }
+  ]
+}

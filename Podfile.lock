@@ -1,0 +1,72 @@
+PODS:
+  - AFNetworking (2.5.1):
+    - AFNetworking/NSURLConnection (= 2.5.1)
+    - AFNetworking/NSURLSession (= 2.5.1)
+    - AFNetworking/Reachability (= 2.5.1)
+    - AFNetworking/Security (= 2.5.1)
+    - AFNetworking/Serialization (= 2.5.1)
+    - AFNetworking/UIKit (= 2.5.1)
+  - AFNetworking/NSURLConnection (2.5.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.1)
+  - AFNetworking/Security (2.5.1)
+  - AFNetworking/Serialization (2.5.1)
+  - AFNetworking/UIKit (2.5.1):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - LYService (0.0.1)
+  - Mantle (1.5.4):
+    - Mantle/extobjc (= 1.5.4)
+  - Mantle/extobjc (1.5.4)
+  - Masonry (0.6.1)
+  - OWCoreText (0.0.2):
+    - OWCoreText/NoARC (= 0.0.2)
+  - OWCoreText/NoARC (0.0.2)
+  - OWKit (0.0.6)
+  - OWReader (0.0.3):
+    - OWReader/NoARC (= 0.0.3)
+  - OWReader/NoARC (0.0.3)
+  - pop (1.0.7)
+  - SDWebImage (3.7.1):
+    - SDWebImage/Core (= 3.7.1)
+  - SDWebImage/Core (3.7.1)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.5.0)
+  - LYService (from `libs/LYService`)
+  - Mantle (~> 1.5.4)
+  - Masonry (~> 0.6.0)
+  - OWCoreText (from `libs/OWCoreText`)
+  - OWKit (from `libs/OWkit`)
+  - OWReader (from `libs/OWReader`)
+  - pop (~> 1.0.7)
+  - SDWebImage (~> 3.7.1)
+
+EXTERNAL SOURCES:
+  LYService:
+    :path: libs/LYService
+  OWCoreText:
+    :path: libs/OWCoreText
+  OWKit:
+    :path: libs/OWkit
+  OWReader:
+    :path: libs/OWReader
+
+SPEC CHECKSUMS:
+  AFNetworking: 8bee59492a6ff15d69130efa4d0dc67e0094a52a
+  LYService: f676c18482eac28bad3024bb750cb51a1d910b0f
+  Mantle: d5fbaf30fbc58031223af13812c060e15934a1fe
+  Masonry: 2cb49fd14d203d2db5ca6bb017135b235dde9980
+  OWCoreText: f23d59509720ce18f64fe41dc3b853bb71392254
+  OWKit: 9ac21425c25c83298c349c196bd8acbb961403eb
+  OWReader: f614ccdeaecc50a89bba583610897f6b944129c5
+  pop: 2f14a1ea61339767af9e66741b418c831b3844df
+  SDWebImage: 116e88633b5b416ea0ca4b334a4ac59cf72dd38d
+
+COCOAPODS: 0.36.0.rc.1

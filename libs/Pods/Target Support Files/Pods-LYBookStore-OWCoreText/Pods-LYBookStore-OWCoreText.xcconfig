@@ -1,0 +1,2 @@
+PODS_LYBOOKSTORE_OWCORETEXT_HEADER_SEARCH_PATHS = $SDKROOT/usr/include/libxml2
+PODS_LYBOOKSTORE_OWCORETEXT_OTHER_LDFLAGS = -l"xml2.2" -l"z" -framework "CoreGraphics" -framework "CoreText" -framework "QuartzCore"

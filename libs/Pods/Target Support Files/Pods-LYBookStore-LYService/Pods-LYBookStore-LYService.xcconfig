@@ -1,0 +1,1 @@
+PODS_LYBOOKSTORE_LYSERVICE_OTHER_LDFLAGS = -framework "CoreGraphics" -framework "QuartzCore"

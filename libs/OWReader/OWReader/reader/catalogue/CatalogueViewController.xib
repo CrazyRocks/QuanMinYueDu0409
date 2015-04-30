@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CatalogueViewController">
+            <connections>
+                <outlet property="barBG" destination="l3c-Vn-e7N" id="9kY-L1-HXz"/>
+                <outlet property="continueButton" destination="4zG-b6-rkd" id="BhV-Ef-5jV"/>
+                <outlet property="segmentControl" destination="SXk-qg-AYX" id="jxD-Pq-K15"/>
+                <outlet property="splitLine" destination="80e-50-llG" id="Xfm-g4-vBM"/>
+                <outlet property="view" destination="34" id="49"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view opaque="NO" contentMode="scaleToFill" id="34" userLabel="content view">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l3c-Vn-e7N">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="80e-50-llG" customClass="OWSplitLineView">
+                            <rect key="frame" x="0.0" y="66" width="320" height="4"/>
+                            <color key="backgroundColor" red="1" green="0.39259714969999998" blue="0.0046595372470000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="4" id="C9S-B6-9KF"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.61622080180000005" green="0.61622080180000005" blue="0.61622080180000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="80e-50-llG" secondAttribute="bottom" id="94u-Ld-dQk"/>
+                        <constraint firstItem="80e-50-llG" firstAttribute="leading" secondItem="l3c-Vn-e7N" secondAttribute="leading" id="AgG-DW-8EB"/>
+                        <constraint firstAttribute="height" constant="70" id="LlM-7H-7O2"/>
+                        <constraint firstAttribute="trailing" secondItem="80e-50-llG" secondAttribute="trailing" id="O9X-W0-YKc"/>
+                        <constraint firstItem="80e-50-llG" firstAttribute="leading" secondItem="l3c-Vn-e7N" secondAttribute="leading" id="OmY-ec-ZVP"/>
+                        <constraint firstAttribute="trailing" secondItem="80e-50-llG" secondAttribute="trailing" id="YBp-go-HPG"/>
+                        <constraint firstItem="80e-50-llG" firstAttribute="top" secondItem="l3c-Vn-e7N" secondAttribute="top" constant="66" id="a0B-II-186"/>
+                        <constraint firstAttribute="trailing" secondItem="80e-50-llG" secondAttribute="trailing" id="c8r-1h-gKS"/>
+                        <constraint firstAttribute="bottom" secondItem="80e-50-llG" secondAttribute="bottom" id="eXl-VJ-zOh"/>
+                        <constraint firstItem="80e-50-llG" firstAttribute="top" secondItem="l3c-Vn-e7N" secondAttribute="top" constant="66" id="sCa-Zh-EM1"/>
+                        <constraint firstItem="80e-50-llG" firstAttribute="leading" secondItem="l3c-Vn-e7N" secondAttribute="leading" id="zw7-4U-00z"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="94u-Ld-dQk"/>
+                            <exclude reference="O9X-W0-YKc"/>
+                            <exclude reference="OmY-ec-ZVP"/>
+                            <exclude reference="YBp-go-HPG"/>
+                            <exclude reference="eXl-VJ-zOh"/>
+                            <exclude reference="sCa-Zh-EM1"/>
+                            <exclude reference="zw7-4U-00z"/>
+                        </mask>
+                    </variation>
+                </view>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="SXk-qg-AYX" customClass="KWFSegmentedControl">
+                    <rect key="frame" x="10" y="29" width="300" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="EOO-de-Zs2"/>
+                        <constraint firstAttribute="height" constant="28" id="klm-eU-mLc"/>
+                    </constraints>
+                    <segments>
+                        <segment title="目录"/>
+                        <segment title="书签"/>
+                        <segment title="书摘"/>
+                    </segments>
+                    <connections>
+                        <action selector="segmentValueChanged:" destination="-1" eventType="valueChanged" id="KRn-vI-Itc"/>
+                    </connections>
+                </segmentedControl>
+                <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4zG-b6-rkd" customClass="OWBookButton">
+                    <rect key="frame" x="255" y="195" width="65" height="90"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="65" id="1n2-dO-Acj"/>
+                        <constraint firstAttribute="height" constant="90" id="Sd6-Jb-QNU"/>
+                    </constraints>
+                    <state key="normal" image="reader_continue">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="continueBtn_select"/>
+                    <connections>
+                        <action selector="continueRead:" destination="-1" eventType="touchUpInside" id="axV-Ez-5cG"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="l3c-Vn-e7N" secondAttribute="trailing" id="7td-wF-lAx"/>
+                <constraint firstAttribute="trailing" secondItem="4zG-b6-rkd" secondAttribute="trailing" id="Bmw-Ay-w2T"/>
+                <constraint firstItem="4zG-b6-rkd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="34" secondAttribute="leading" constant="248" id="Zma-y1-brq"/>
+                <constraint firstAttribute="centerX" secondItem="SXk-qg-AYX" secondAttribute="centerX" id="aDe-8S-nfb"/>
+                <constraint firstAttribute="centerY" secondItem="4zG-b6-rkd" secondAttribute="centerY" id="frQ-hC-neD"/>
+                <constraint firstItem="SXk-qg-AYX" firstAttribute="top" secondItem="34" secondAttribute="top" constant="29" id="pWf-qR-urA"/>
+                <constraint firstItem="l3c-Vn-e7N" firstAttribute="leading" secondItem="34" secondAttribute="leading" id="t83-aW-pWk"/>
+                <constraint firstItem="l3c-Vn-e7N" firstAttribute="top" secondItem="34" secondAttribute="top" id="tab-vf-zPI"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="237" y="413"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="continueBtn_select" width="28" height="52"/>
+        <image name="reader_continue" width="65" height="90"/>
+    </resources>
+</document>

@@ -1,0 +1,1 @@
+../../../../OWReader/OWReader/reader/BookDigest/BookDigestTableViewCell.h

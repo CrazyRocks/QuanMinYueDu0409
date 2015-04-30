@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WYArticleSearchController">
+            <connections>
+                <outlet property="searchBT" destination="NRh-IK-lBr" id="Rbq-3B-oVd"/>
+                <outlet property="searchBar" destination="acV-Zp-cAg" id="e7m-Kh-HOK"/>
+                <outlet property="searchField" destination="R1o-Zy-054" id="bFb-Tm-jwW"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="acV-Zp-cAg" userLabel="search bar">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="searchBar_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="8zZ-xK-mSV">
+                            <rect key="frame" x="10" y="10" width="301" height="40"/>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R1o-Zy-054">
+                            <rect key="frame" x="18" y="12" width="239" height="36"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NRh-IK-lBr">
+                            <rect key="frame" x="265" y="9" width="44" height="41"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="ASE-XH-YHq"/>
+                                <constraint firstAttribute="height" constant="41" id="gdY-DC-3O6"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="搜索">
+                                <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="searchButtonTapped:" destination="-1" eventType="touchUpInside" id="xhc-no-5yW"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="NRh-IK-lBr" secondAttribute="trailing" constant="11" id="BWm-fK-ED9"/>
+                        <constraint firstItem="8zZ-xK-mSV" firstAttribute="leading" secondItem="acV-Zp-cAg" secondAttribute="leading" constant="10" id="D1P-qb-n8c"/>
+                        <constraint firstAttribute="height" constant="60" id="G0Y-ow-7p9"/>
+                        <constraint firstItem="NRh-IK-lBr" firstAttribute="leading" secondItem="R1o-Zy-054" secondAttribute="trailing" constant="8" id="Ifl-vo-9ZF"/>
+                        <constraint firstItem="R1o-Zy-054" firstAttribute="leading" secondItem="acV-Zp-cAg" secondAttribute="leading" constant="18" id="Pd7-qb-XFc"/>
+                        <constraint firstAttribute="bottom" secondItem="R1o-Zy-054" secondAttribute="bottom" constant="12" id="S1z-jB-6rB"/>
+                        <constraint firstItem="NRh-IK-lBr" firstAttribute="top" secondItem="acV-Zp-cAg" secondAttribute="top" constant="9" id="UJa-Dd-9Md"/>
+                        <constraint firstItem="8zZ-xK-mSV" firstAttribute="top" secondItem="acV-Zp-cAg" secondAttribute="top" constant="10" id="gKq-pY-Z7B"/>
+                        <constraint firstItem="R1o-Zy-054" firstAttribute="top" secondItem="acV-Zp-cAg" secondAttribute="top" constant="12" id="sGT-Eh-auM"/>
+                        <constraint firstAttribute="bottom" secondItem="8zZ-xK-mSV" secondAttribute="bottom" constant="10" id="tK9-r2-C8y"/>
+                        <constraint firstAttribute="trailing" secondItem="8zZ-xK-mSV" secondAttribute="trailing" constant="9" id="v7B-N0-8jL"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="acV-Zp-cAg" secondAttribute="trailing" id="bx0-AJ-6c4"/>
+                <constraint firstItem="acV-Zp-cAg" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="hFC-7y-y9z"/>
+                <constraint firstItem="acV-Zp-cAg" firstAttribute="top" secondItem="1" secondAttribute="top" id="pKx-zZ-t2F"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="searchBar_bg.png" width="602" height="90"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

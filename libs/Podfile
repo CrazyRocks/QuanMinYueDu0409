@@ -1,0 +1,68 @@
+platform :ios, "6.0"
+
+workspace       "LY_SDK"
+
+xcodeproj "LYBookStore/LYBookStore.xcodeproj"
+xcodeproj "LYService/LYService.xcodeproj"
+xcodeproj "OWCoreText/OWCoreText.xcodeproj"
+xcodeproj "ZXingObjC/ZXingObjC.xcodeproj"
+xcodeproj "OWReader/OWReader.xcodeproj"
+xcodeproj "OWKit/OWKit.xcodeproj"
+
+
+target "OWKit" do
+    xcodeproj "OWKit/OWKit.xcodeproj"
+    pod "pop",          "~> 1.0.6"
+    pod "AFNetworking",	"~> 2.3.1"
+    pod "SDWebImage",	"~> 3.7.1"
+    pod 'Masonry',      '~> 0.6.0'
+    pod 'Mantle', '~> 1.5.3'
+
+end
+
+target "ZXingObjC" do
+    xcodeproj "ZXingObjC/ZXingObjC.xcodeproj"
+end
+
+target "OWCoreText" do
+    xcodeproj "OWCoreText/OWCoreText.xcodeproj"
+    pod "pop",          "~> 1.0.6"
+    pod "AFNetworking",	"~> 2.3.1"
+    pod "SDWebImage",	"~> 3.7.1"
+    pod 'Masonry',      '~> 0.6.0'
+    pod 'Mantle', '~> 1.5.3'
+    pod "OWKit",        :path=>"OWkit"
+end
+
+target "LYService" do
+    xcodeproj "LYService/LYService.xcodeproj"
+    pod "pop",          "~> 1.0.6"
+    pod "AFNetworking",	"~> 2.3.1"
+    pod "SDWebImage",	"~> 3.7.1"
+end
+
+target "OWReader" do
+    xcodeproj "OWReader/OWReader.xcodeproj"
+    pod "pop",          "~> 1.0.6"
+    pod "AFNetworking",	"~> 2.3.1"
+    pod "SDWebImage",	"~> 3.7.1"
+    pod 'Masonry',      '~> 0.6.0'
+    pod 'Mantle', '~> 1.5.3'
+    pod "OWKit",        :path=>"OWkit"
+    pod "OWCoreText",   :path=>"OWCoreText"
+    pod "LYService",   :path=>"LYService"
+end
+
+target "LYBookStore" do
+    xcodeproj "LYBookStore/LYBookStore.xcodeproj"
+    pod "pop",          "~> 1.0.6"
+    pod "AFNetworking",	"~> 2.3.1"
+    pod "SDWebImage",	"~> 3.7.1"
+    pod 'Masonry',      '~> 0.6.0'
+    pod 'Mantle', '~> 1.5.3'
+    pod "ZXingObjC",    :path=>"ZXingObjC"
+    pod "OWKit",        :path=>"OWkit"
+    pod "OWCoreText",   :path=>"OWCoreText"
+    pod "LYService",    :path=>"LYService"
+    pod "OWReader",    :path=>"OWReader"
+end

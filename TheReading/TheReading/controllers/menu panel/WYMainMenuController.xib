@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C81f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WYMainMenuController">
+            <connections>
+                <outlet property="_tableView" destination="yZB-GM-PIF" id="s6k-9i-P8P"/>
+                <outlet property="accountButton" destination="0Wd-nG-jw5" id="DQ6-ej-6py"/>
+                <outlet property="bgView" destination="9hP-3o-405" id="beY-HW-X0u"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mainScreen_bg" translatesAutoresizingMaskIntoConstraints="NO" id="9hP-3o-405">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UEY-w3-yVn">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.27000000000000002" colorSpace="calibratedRGB"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" style="plain" separatorStyle="none" rowHeight="52" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="yZB-GM-PIF">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </tableView>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Wd-nG-jw5">
+                    <rect key="frame" x="5" y="516" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="9pM-jl-uBL"/>
+                        <constraint firstAttribute="height" constant="44" id="Al8-Yo-DKp"/>
+                    </constraints>
+                    <state key="normal" image="account_button_normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="account_button_selected"/>
+                    <state key="highlighted" image="account_button_selected"/>
+                    <connections>
+                        <action selector="intoAccount:" destination="-1" eventType="touchUpInside" id="GLq-wV-42C"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="0Wd-nG-jw5" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="5" id="53W-8m-EVT"/>
+                <constraint firstItem="UEY-w3-yVn" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="8qB-YA-0y7"/>
+                <constraint firstAttribute="trailing" secondItem="UEY-w3-yVn" secondAttribute="trailing" id="Ck2-k8-71L"/>
+                <constraint firstAttribute="trailing" secondItem="yZB-GM-PIF" secondAttribute="trailing" id="Mxc-YR-5WV"/>
+                <constraint firstItem="yZB-GM-PIF" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="PKb-9y-5HZ"/>
+                <constraint firstItem="yZB-GM-PIF" firstAttribute="top" secondItem="1" secondAttribute="top" id="cqd-G3-7ho"/>
+                <constraint firstAttribute="bottom" secondItem="UEY-w3-yVn" secondAttribute="bottom" id="cqm-nm-eNs"/>
+                <constraint firstItem="UEY-w3-yVn" firstAttribute="top" secondItem="1" secondAttribute="top" id="iD2-1b-kuo"/>
+                <constraint firstAttribute="bottom" secondItem="0Wd-nG-jw5" secondAttribute="bottom" constant="8" id="kaj-dj-ZEr"/>
+                <constraint firstAttribute="bottom" secondItem="yZB-GM-PIF" secondAttribute="bottom" id="tsQ-WV-GRb"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="account_button_normal" width="40" height="40"/>
+        <image name="account_button_selected" width="40" height="40"/>
+        <image name="mainScreen_bg" width="320" height="568"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
