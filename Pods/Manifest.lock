@@ -38,7 +38,7 @@ PODS:
   - SDWebImage/Core (3.7.1)
 
 DEPENDENCIES:
-  - AFNetworking (~> 2.5.0)
+  - AFNetworking (~> 2.5.1)
   - LYService (from `libs/LYService`)
   - Mantle (~> 1.5.4)
   - Masonry (~> 0.6.0)
@@ -59,14 +59,14 @@ EXTERNAL SOURCES:
     :path: libs/OWReader
 
 SPEC CHECKSUMS:
-  AFNetworking: 8bee59492a6ff15d69130efa4d0dc67e0094a52a
+  AFNetworking: 10e85a00bb0f475124e4ff2677bf15693b2c1523
   LYService: f676c18482eac28bad3024bb750cb51a1d910b0f
-  Mantle: d5fbaf30fbc58031223af13812c060e15934a1fe
-  Masonry: 2cb49fd14d203d2db5ca6bb017135b235dde9980
+  Mantle: 60acd0cd363e27d945bda0a6b8e90577112d28f3
+  Masonry: 4972309f2f134de9dd312f4dc4a21359b50e6caa
   OWCoreText: f23d59509720ce18f64fe41dc3b853bb71392254
   OWKit: 9ac21425c25c83298c349c196bd8acbb961403eb
   OWReader: f614ccdeaecc50a89bba583610897f6b944129c5
-  pop: 2f14a1ea61339767af9e66741b418c831b3844df
-  SDWebImage: 116e88633b5b416ea0ca4b334a4ac59cf72dd38d
+  pop: 628ffc631644601567ee8bfaaaea493ebd7d0923
+  SDWebImage: ed3095af2ff88b436426037444979b917f6c5575
 
-COCOAPODS: 0.36.0.rc.1
+COCOAPODS: 0.36.3

@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "OWBasicHTTPRequest.h"
 
+#define kFAVCATSBYNAME      @"favCatsByName"
+
 @interface LYAccountManager : OWBasicHTTPRequest
 
 //是否已登陆

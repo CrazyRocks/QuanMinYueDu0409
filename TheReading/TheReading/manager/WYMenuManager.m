@@ -10,6 +10,7 @@
 #import "WYCoreDataDelegate.h"
 #import "WYArticleCategory.h"
 #import <LYService/CommonNetworkingManager.h> 
+#import <LYAccountManager.h>
 
 @implementation WYMenuManager
 
@@ -53,6 +54,10 @@
 
 - (void)generateFavorite:(NSArray *)result
 {
+    NSString *username = [LYAccountManager getUserName];
+    NSString *localFav = [NSString stringWithFormat:@"%@_%@", kFAVCATSBYNAME, username];
+    NSArray *fav = [[NSUserDefaults standardUserDefaults]objectForKey:localFav];
+    
     if (self.favoriteCats) {
         [self.favoriteCats removeAllObjects];
         [self.dislikeCats removeAllObjects];
@@ -61,18 +66,39 @@
         self.favoriteCats = [NSMutableArray new];
         self.dislikeCats = [NSMutableArray new];
     }
-    
-    NSInteger favCount = 5;
-    if (isPad) {
-        favCount = 9;
-    }
-    for (NSInteger i=0; i<result.count; i++) {
-        LYCategoryCellData *cat = result[i];
-        if (i<favCount) {
-            [self.favoriteCats addObject:cat];
+    //NSLog(@"\r\n count:%ld", fav.count);
+    if (fav.count != 0) {
+        for (NSInteger i=0; i<result.count; i++) {
+            BOOL isFound = NO;
+            OWSubNavigationItem *cat = result[i];
+            for (int j = 0; j < fav.count; j++) {
+                OWSubNavigationItem *catLocal = [NSKeyedUnarchiver unarchiveObjectWithData:fav[j]];
+                //NSLog(@"\r\n name:%@,catname:%@", catLocal.catID, cat.catID);
+                if ([catLocal.catID isEqual:cat.catID]) {
+                    [self.favoriteCats addObject:cat];
+                    isFound = YES;
+                } else {
+                    continue;
+                }
+                //[self.dislikeCats addObject:cat];
+            }
+            if (isFound == NO) {
+                [self.dislikeCats addObject:cat];
+            }
         }
-        else {
-            [self.dislikeCats addObject:cat];
+    } else {
+        NSInteger favCount = 5;
+        if (isPad) {
+            favCount = 9;
+        }
+        for (NSInteger i=0; i<result.count; i++) {
+            LYCategoryCellData *cat = result[i];
+            if (i<favCount) {
+                [self.favoriteCats addObject:cat];
+            }
+            else {
+                [self.dislikeCats addObject:cat];
+            }
         }
     }
 }

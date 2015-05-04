@@ -10,4 +10,17 @@
 
 @implementation LYCategoryCellData
 
+- (void)encodeWithCoder:(NSCoder *)aCoder {
+    [aCoder encodeObject:self.categoryID forKey:@"categoryID"];
+    [aCoder encodeObject:self.name forKey:@"name"];
+}
+
+- (id)initWithCoder: (NSCoder *)coder {
+    if (self = [super init]) {
+        self.categoryID = [coder decodeObjectForKey:@"categoryID"];
+        self.name = [coder decodeObjectForKey:@"name"];
+    }
+    return self;
+}
+
 @end

@@ -16,6 +16,7 @@
 
 @implementation LYAccountManager
 
+
 +(BOOL)isLogin
 {
     if([[NSUserDefaults standardUserDefaults] objectForKey:LONGYUAN_TOKEN])

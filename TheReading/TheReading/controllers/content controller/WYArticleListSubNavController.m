@@ -38,6 +38,17 @@
     if (!_subNavDataSource) {
         _subNavDataSource = self.menuManager.favoriteCats;
     }
+    NSString *username = [LYAccountManager getUserName];
+    NSString *localFav = [NSString stringWithFormat:@"%@_%@", kFAVCATSBYNAME, username];
+    //NSLog(@"\r\n name:%@,cout:%ld", localFav, self.menuManager.favoriteCats.count);
+    NSMutableArray *arrayLocal = [[NSMutableArray alloc]init];
+    for (OWSubNavigationItem *cellData in self.menuManager.favoriteCats) {
+        NSData *userData = [NSKeyedArchiver archivedDataWithRootObject:cellData];
+        [arrayLocal addObject:userData];
+    }
+    NSArray *localArr = [NSArray arrayWithArray:arrayLocal];
+    
+    [[NSUserDefaults standardUserDefaults] setObject:localArr forKey:localFav];
     return _subNavDataSource;
 }
 
