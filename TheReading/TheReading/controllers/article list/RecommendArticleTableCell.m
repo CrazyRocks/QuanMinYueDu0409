@@ -9,6 +9,7 @@
 #import "RecommendArticleTableCell.h"
 #import <OWCoreText/OWCoreText.h>
 #import <OWCoreText/OWInfiniteCoreTextLayouter.h>
+#import "LYStrAnalysis.h"
 
 @implementation RecommendArticleTableCell
 
@@ -74,7 +75,8 @@
     }
 
     titleLabel.text = info.title;
-    summaryLabel.text = info.summary;
+    NSString *anaStr = [LYStrAnalysis stringAnalysisFromStr:info.summary];
+    summaryLabel.text = anaStr;
     magLabel.text = info.publishDateSection;
 }
 
